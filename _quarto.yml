@@ -3,18 +3,21 @@ project:
   output-dir: docs
 
 website:
-  title: "nooriza.github.io"
+  title: "Portfolio"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - project.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: darkly
     css: styles.css
     toc: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
 
 editor: visual
 

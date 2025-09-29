@@ -1,11 +1,9 @@
 ---
-title: "nooriza.github.io"
+title: "About Me"
 ---
 
-This is a Quarto website.
+Hi, I’m **Nooriza Maharani** — a spatial data analyst. I have a major in Geography, with a specialization in Regional Development. I am currently a Master's student in the Centre for Advanced Spatial Analysis, The Bartlett, University College London.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+### Connect with me
 
-```{r}
-1 + 1
-```
+<a href="mailto:nooriza.maharani@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://github.com/nooriza16" target="_blank"><i class="fab fa-github"></i></a> <a href="https://linkedin.com/in/nooriza-maharani" target="_blank"><i class="fab fa-linkedin"></i></a>

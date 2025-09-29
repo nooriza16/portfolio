@@ -1,0 +1,21 @@
+---
+title: "Projects"
+---
+
+About this site
+
+```{}
+```
+
+# My Projects
+
+Here are some of my works:
+
+-   <img src="project1-thumbnail.jpg" alt="Project 1" width="120" style="vertical-align:middle; margin-right:10px;"/> [Mapping Urban Growth](project1.qmd)\
+    A study on how cities expand using spatial data.
+
+-   <img src="project2-thumbnail.jpg" alt="Project 2" width="120" style="vertical-align:middle; margin-right:10px;"/> [Machine Learning for Satellite Imagery](project2.qmd)\
+    Applying deep learning models to classify land use.
+
+-   <img src="project3-thumbnail.jpg" alt="Project 3" width="120" style="vertical-align:middle; margin-right:10px;"/> [Spatial Network Analysis](project3.qmd)\
+    Using graph theory to understand urban transport systems.
