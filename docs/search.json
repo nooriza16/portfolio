@@ -88,21 +88,21 @@
     "href": "project.html",
     "title": "Projects",
     "section": "",
-    "text": "About this site\n\n\nMy Projects\n\n\n\nHere are some of works I created during my Master’s\n:\n\n\n\n\n\n\nPredicting Obesity Prevalence in London\nCan childhood hardships predict obesity? Uncovering the link between early life adversity and obesity prevalence\n\n\n\n\n\nModelling Rip-Current Rescue using Agent-Based Modelling\nInspired by a rip current tragedy in my hometown, this model visualizes maritime rescue related to rip current incidents from the ground up, using Agent-Based Modelling.\n\n\n\n\n\nInvestigating London’s Underground Resilience\nA study on how to measure the importance of London’s underground network under various scenarios of vulnerabilities.\n\n\n\n\n\nSupermarket Investment in the Borough of Havering, London\nWhich location offers the greatest advantage for a new supermarket in the Borough of Havering? A comparison of two proposed sites to find the most beneficial spot\n\n\n\n\n\nProposing Intersection Upgrade Locations in the City of Charlotte, North Carolina\n\nThis project is part of a GIS assessment challenge, focused on helping the City of Charlotte decide where to upgrade intersections after receiving \\$4.47 million to reduce pedestrian injuries and deaths.\n\n\n\n\nMapping the distribution of Threatened Group Animals impacted by Forest Loss"
+    "text": "Here are some of works I created during my Master’s or my previous works\n:\n\n\n\n\n\nPredicting Obesity Prevalence in London\nCan childhood hardships predict obesity? Uncovering the link between early life adversity and obesity prevalence by comparing classical regression model, random forest, and XGBoost.\n\n\n\nModelling Rip-Current Rescue using Agent-Based Modelling\nInspired by a rip current tragedy in my hometown, this model visualizes maritime rescue related to rip current incidents from the ground up, using Netlogo.\n\n\n\nInvestigating London’s Underground Resilience\nA study on how to measure the importance of London’s underground network under various scenarios of vulnerabilities using networkX in python.\n\n\n\nSupermarket Investment in the Borough of Havering, London\nWhich location offers the greatest advantage for a new supermarket in the Borough of Havering? A comparison of two proposed sites to find the most beneficial spot using spatial interaction model in python.\n\n\n\nProposing Intersection Upgrade Locations in the City of Charlotte, North Carolina\nThis project is part of a GIS assessment challenge using Rstudio, focused on helping the City of Charlotte decide where to upgrade intersections after receiving $4.47 million to reduce pedestrian injuries and deaths.\n\n\n\nMapping the distribution of Threatened Group Animals impacted by Forest Loss\nThis projects is"
   },
   {
     "objectID": "project2.html",
     "href": "project2.html",
     "title": "Modelling Rip Current Rescue using Agent Based Modelling",
     "section": "",
-    "text": "Rip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?\nTo ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).\n\nFigure 1 Rip Current Anatomy. Source : University of Hawai’i"
+    "text": "As a planner, the part of our job is to model a city……which is utterly complex! and then we want to make the ‘computer’ do exactly what we want. How could we build a complex model when we could not even model a simple entity? this is one of main reason draws me to Agent Based Modelling (ABM). Unlike other programming languange I’ve learnt, ABM holds a special place in me because it could turn my abstract or wildest idea into a digital model. Like we could build a game from scratch, that’s fun! As part of the challenge in the assessment during my time in CASA, I create a model inspired by beach hazard incidents in my hometwon in early 2024, caused by a rip current. Here we go…….."
   },
   {
     "objectID": "project2.html#context",
     "href": "project2.html#context",
     "title": "Modelling Rip Current Rescue using Agent Based Modelling",
-    "section": "",
-    "text": "Rip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?\nTo ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).\n\nFigure 1 Rip Current Anatomy. Source : University of Hawai’i"
+    "section": "Context",
+    "text": "Context\nRip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?\nTo ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).\n\nFigure 1 Rip Current Anatomy. Source : University of Hawai’i"
   },
   {
     "objectID": "project2.html#entities-and-state-variables",
@@ -130,7 +130,7 @@
     "href": "project2.html#modelling-result",
     "title": "Modelling Rip Current Rescue using Agent Based Modelling",
     "section": "Modelling Result",
-    "text": "Modelling Result\nEmbedded Video"
+    "text": "Modelling Result"
   },
   {
     "objectID": "project4.html",
@@ -145,5 +145,12 @@
     "title": "Identify the most promising locations between 2 potential store investments.",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "project2.html#demo-video",
+    "href": "project2.html#demo-video",
+    "title": "Modelling Rip Current Rescue using Agent Based Modelling",
+    "section": "Demo Video",
+    "text": "Demo Video\n\n\nYour browser does not support the video tag."
   }
 ]

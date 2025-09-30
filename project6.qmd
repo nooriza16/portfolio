@@ -1,8 +1,9 @@
 ---
-title: "Identify the most promising locations between 2 potential store investments."
+title: "Mapping the distribution of Threatened Group Animals impacted by Forest Loss"
 ---
 
-About this site
+## Context
 
-```{}
-```
+Despite being one of the world’s biodiversity hotspots and facing immense threats, Indonesian Borneo still lacks a comprehensive dataset that identifies where forest loss is occurring and which species’ habitats are being affected. This gap poses a significant challenge to fulfilling the commitments of the Kunming-Montreal Global Biodiversity Framework and advancing broader conservation efforts.
+
+Using Google Earth Engine, this research aims to map and quantify the extent to which forest loss affects habitat loss for threatened animal groups, while also assessing the intactness of biodiversity in the remaining habitat.
