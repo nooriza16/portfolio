@@ -1,37 +1,149 @@
 [
   {
+    "objectID": "project7.html",
+    "href": "project7.html",
+    "title": "Mapping the distribution of Threatened Group Animals impacted by Forest Loss",
+    "section": "",
+    "text": "Despite being one of the world’s biodiversity hotspots and facing immense threats, Indonesian Borneo still lacks a comprehensive dataset that identifies where forest loss is occurring and which species’ habitats are being affected. This gap poses a significant challenge to fulfilling the commitments of the Kunming-Montreal Global Biodiversity Framework and advancing broader conservation efforts.\nUsing Google Earth Engine, this research aims to map and quantify the extent to which forest loss affects habitat loss for threatened animal groups, while also assessing the intactness of biodiversity in the remaining habitat."
+  },
+  {
+    "objectID": "project7.html#context",
+    "href": "project7.html#context",
+    "title": "Mapping the distribution of Threatened Group Animals impacted by Forest Loss",
+    "section": "",
+    "text": "Despite being one of the world’s biodiversity hotspots and facing immense threats, Indonesian Borneo still lacks a comprehensive dataset that identifies where forest loss is occurring and which species’ habitats are being affected. This gap poses a significant challenge to fulfilling the commitments of the Kunming-Montreal Global Biodiversity Framework and advancing broader conservation efforts.\nUsing Google Earth Engine, this research aims to map and quantify the extent to which forest loss affects habitat loss for threatened animal groups, while also assessing the intactness of biodiversity in the remaining habitat."
+  },
+  {
+    "objectID": "project5.html",
+    "href": "project5.html",
+    "title": "Evaluating a proposed intersection upgrade locations",
+    "section": "",
+    "text": "Evaluating a proposed intersection upgrade locations: through understanding of spatial pattern of pedestrian-related crash locations"
+  },
+  {
     "objectID": "project3.html",
     "href": "project3.html",
-    "title": "About",
+    "title": "INVESTIGATING LONDON’S UNDERGROUND RESILIENCE",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "project1.html",
     "href": "project1.html",
-    "title": "About",
+    "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Alarmingly, one in five children is overweight or obese when they start school, and rising to one in three by the end of primary school (House of Commons, 2015). If current trends continue, Britain could become predominantly obese society by 2050 (Butland et al., 2027).\nDespite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo et al., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds et al., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by acomplex factors (Lingvay et al. (2024), looking at different angles might offer valuable insights.\nThis work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors."
+  },
+  {
+    "objectID": "project1.html#context",
+    "href": "project1.html#context",
+    "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
+    "section": "",
+    "text": "Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Alarmingly, one in five children is overweight or obese when they start school, and rising to one in three by the end of primary school (House of Commons, 2015). If current trends continue, Britain could become predominantly obese society by 2050 (Butland et al., 2027).\nDespite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo et al., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds et al., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by acomplex factors (Lingvay et al. (2024), looking at different angles might offer valuable insights.\nThis work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors."
+  },
+  {
+    "objectID": "project1.html#question-to-address",
+    "href": "project1.html#question-to-address",
+    "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
+    "section": "Question to address",
+    "text": "Question to address\nRQ1: How accurately can early life adversities predict obesity prevalence in pre-teen children in London using various predictive machine learning models?\nRQ2: How do early life adversities contribute to pree-teen’s obesity prevalence in London?"
+  },
+  {
+    "objectID": "project1.html#dataset",
+    "href": "project1.html#dataset",
+    "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
+    "section": "Dataset",
+    "text": "Dataset"
+  },
+  {
+    "objectID": "project1.html#method",
+    "href": "project1.html#method",
+    "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
+    "section": "Method",
+    "text": "Method\nAddressing RQ1, linear regression is applied as it provides a simple, fast baseline forpredicting pre-teen obesity. For better accuracy, advanced models like RandomForest (RF) and XGBoost (XGB) are also applied, following Long et al . (2025)’smethodology on UK’s nutritional-based obesity research, as RF and XGB excel withhigh-dimensional, non-linearity, and predictive performance. Meanwhile, to addressRQ2, this study employs Shapley Additive exPlanations (SHAP) to identify featurescontributing to obesity prevalence. The diagram below presents the overall approach followed in this project, showingeach key task in the order they were performed."
+  },
+  {
+    "objectID": "project1.html#result",
+    "href": "project1.html#result",
+    "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
+    "section": "Result",
+    "text": "Result\n1) Preliminary Result\n\nThe results highlight differences in model performance and generalization: Linear Regression generalizes well, but its predictive power is limited by the linearity assumption, which some features violate, as shown in the correlation matrix While Random Forest and XGBoost fit the training data well, they overfit on the test data. Despite this, they outperform Linear Regression in RMSE, with Random Forest performing better than XGBoost.’\n2) Hyperparameter tuning and Cross Validation result\nAs Linear Regression does not have hyperparameters to tune, hyperparameters tuning will be applied to RF and XGB. GridSearchCV with 5-fold cross-validation is used to optimize performance, aiming to reduce test RMSE and improve R² while maintaining simplicity and efficiency.\n\nRandom Forest\nIn RF, the model’s previous overfitting result suggest that the tree might be too deep, thus max_depth is tested from shallow (3) to moderately deep (12), aiming to capture key patterns without fitting irrelevant details. The min_samples_split and min_samples_leaf is also tuned (up to 15) to prevent overly specific splits. Additionally, n_estimator is optimized, as more trees can improve performance.\n\nThe model reduces overfitting, boosts R² on test data, and sets max_depth to 5 for better generalization. We will examine this hyperparameter individually using validation curve to identify the point at which increasing it leads to overfitting.\n\nWe can see that after max_depth = 5 on validation curve (red), model’s performance on unseen data plateaus, indicating that beyond this point the model likely starting to overfit.\nXGBoost\nIn XGBoost, to optimize model performance, we will vary max_depth to find an optimal depth. The learning_rate will be evaluate to achieve stable adjusted parameter after being iterated. We will also vary n_estimators , as the bigger the number the more stable the model performance. Additionally, reg_lambda will be tested to reduce overfitting by penalize large weights.\n\nAfter tuning, R² increases, overfitting reduced significantly, and the model identifies a max_depth of 4 for good generalization. We will investigate this using a validation curve.\n\nDespite its slightly fluctuative R² score, the pleateu starts to emerge from the max_depth = 4, suggesting that changing the hyperparameter within that range doesn’t significantly improve generalization performance and may increase the risk of overfitting.\n\n3) Comparison of Each Model\n\n\nThe accuracy of machine learning models in predicting pre-teen obesity prevalence in London using early life adversities varies. Random Forest and XGBoost models show higher R² and lower RMSE compared to the baseline linear regression model. Among advanced models, RF has a better performance than XGBoost, with higher R² (0.622 vs. 0.603), with relatively small prediction errors compared to other models listed (0.0334 vs. 0.0342 and 0.0354), and less overfitting before and after hyperparameter tuning.\nAdditionally, Random Forest is faster than XGBoost, even with larger folds. However, even with advanced models like Random Forest, early life adversities can only explain 62.2% of the variance in pre-teen obesity prevalence in London. This leaves 37.8% unexplained. This happened as early life adversity associated with central adiposity in 2 ways, a physiological route (metabolic functioning) and psychosocial route (behaviour) (Davis et al., 2014). Meanwhile, the dataset used in this study does not include physiological aspects, only linking potential proxies for psychosocial, which may account for the unexplained variance.\nTo address RQ2, we will compare feature contributions in the top models, Random Forest and XGBoost, using a SHAP beeswarm plot.\n\n\nThe Random Forest and XGBoost models consistently highlight child poverty, lackof educational qualifications, and mental health index as key contributing factors topre-teen obesity prevalence, underscoring their universal importance. This alignswith Kimbro and Denney ( 2013) which linked obesity with higher poverty level andlow education.\nThe third-ranked mental health index further emphasizes the needfor integrating mental health to obesity interventions. The models diverge in their fourth and fifth rankings: RF places families with 3+children fourth and those working 49+ hours per week fifth, while XGB ranksworking 49+ hours fourth and lone parent unemployment fifth. RF highlightsresource strain in larger households and time strain potentially limiting healthymeal preparation or child supervision, while XGB points to struggles in single-parent households and overtime working (49+ hours exceeds the UK Working TimeDirective).\nThese findings suggests that obesity interventions may benefit from incorporatingat-risk populations with childhood adversities, as well as evaluating supportschemes for work-life balance, unemployed single parents, and large households"
+  },
+  {
+    "objectID": "project1.html#conclusion",
+    "href": "project1.html#conclusion",
+    "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nThe Random Forest model outperforms XGBoost and Linear Regression in predicting pre-teen obesity prevalence with higher R² and lower RMSE.\nBoth the Random Forest and XGBoost models consistently identify child poverty, limited educational qualifications, and mental health issues as major contributing factors to pre-teen obesity prevalence in London"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "Hi, I’m Nooriza Maharani — a spatial data analyst. I have a major in Geography, with a specialization in Regional Development. I am currently a Master’s student in the Centre for Advanced Spatial Analysis, The Bartlett, University College London.\n\nConnect with me"
+    "text": "Hi, I’m Nooriza Maharani, a spatial data analyst with a background in Geography and a specialization in Regional Development. I’m currently pursuing a Master’s degree at the Centre for Advanced Spatial Analysis (CASA), part of The Bartlett, University College London, where I focus on urban analytics, GIS, and data-driven decision-making.\nMy work sits at the intersection of spatial science, data analysis, and urban planning. I’m especially interested in using spatial insights to support decision-making and explore how data can inform more sustainable and equitable development\n\nConnect with me"
   },
   {
     "objectID": "project.html",
     "href": "project.html",
     "title": "Projects",
     "section": "",
-    "text": "About this site\n\n\nMy Projects\nHere are some of my works:\n\n Mapping Urban Growth\nA study on how cities expand using spatial data.\n Machine Learning for Satellite Imagery\nApplying deep learning models to classify land use.\n Spatial Network Analysis\nUsing graph theory to understand urban transport systems."
+    "text": "About this site\n\n\nMy Projects\n\n\n\nHere are some of works I created during my Master’s\n:\n\n\n\n\n\n\nPredicting Obesity Prevalence in London\nCan childhood hardships predict obesity? Uncovering the link between early life adversity and obesity prevalence\n\n\n\n\n\nModelling Rip-Current Rescue using Agent-Based Modelling\nInspired by a rip current tragedy in my hometown, this model visualizes maritime rescue related to rip current incidents from the ground up, using Agent-Based Modelling.\n\n\n\n\n\nInvestigating London’s Underground Resilience\nA study on how to measure the importance of London’s underground network under various scenarios of vulnerabilities.\n\n\n\n\n\nSupermarket Investment in the Borough of Havering, London\nWhich location offers the greatest advantage for a new supermarket in the Borough of Havering? A comparison of two proposed sites to find the most beneficial spot\n\n\n\n\n\nProposing Intersection Upgrade Locations in the City of Charlotte, North Carolina\n\nThis project is part of a GIS module challenge, focused on helping the City of Charlotte decide where to upgrade intersections after receiving \\$4.47 million to reduce pedestrian injuries and deaths.\n\n\n\n\nMapping the distribution of Threatened Group Animals impacted by Forest Loss"
   },
   {
     "objectID": "project2.html",
     "href": "project2.html",
-    "title": "About",
+    "title": "Modelling Rip Current Rescue using Agent Based Modelling",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Rip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?\nTo ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).\n\nFigure 1 Rip Current Anatomy. Source : University of Hawai’i"
+  },
+  {
+    "objectID": "project2.html#context",
+    "href": "project2.html#context",
+    "title": "Modelling Rip Current Rescue using Agent Based Modelling",
+    "section": "",
+    "text": "Rip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?\nTo ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).\n\nFigure 1 Rip Current Anatomy. Source : University of Hawai’i"
+  },
+  {
+    "objectID": "project2.html#entities-and-state-variables",
+    "href": "project2.html#entities-and-state-variables",
+    "title": "Modelling Rip Current Rescue using Agent Based Modelling",
+    "section": "Entities and State Variables",
+    "text": "Entities and State Variables\n\nGlobal variables track drowned, lost, and rescued bathers while initial bathers and rescue time can be modified. Meanwhile, the model spans 66 x 42 grids, each grid represents 20m x 20m. Each tick represents one minute, and the simulation will end after 180 minutes. The strength of rip currents differ depends on the beach topography however in this model we use the recorded current strength of 1 m/s (Yuan et al., 2023) thus bathers moving one patch away equals with 20 m away from the shoreline on each tick."
+  },
+  {
+    "objectID": "project2.html#modelled-patches",
+    "href": "project2.html#modelled-patches",
+    "title": "Modelling Rip Current Rescue using Agent Based Modelling",
+    "section": "Modelled Patches",
+    "text": "Modelled Patches\n\nFigure 2 Modelled Patches, each number represent the strength current\n\nFigure 3 Netlogo interface result"
+  },
+  {
+    "objectID": "project2.html#process-overview-and-scheduling",
+    "href": "project2.html#process-overview-and-scheduling",
+    "title": "Modelling Rip Current Rescue using Agent Based Modelling",
+    "section": "Process overview and scheduling",
+    "text": "Process overview and scheduling\nThe intuition of the process repeated upon every tick are the bathers will be dragged away from the shoreline with movement depends on the currents’ strength. The movement will cost bathers energy, thus energy will be updated every ticks with detail as follows:\n\nneck area, each patches cost 4 to 7 energy\nhead, each patches costs 4 to 5 energy\nIn non-rip currents area near the shoreline, each patch will cost 2 energy\nIn non-rip currents area away from the shoreline cost 3 energy\n\nAfter that, when the response time set, the ship will navigate its direction depending on target availability in radius of 5 patch either move randomly or to rescue. Upon sensing the target, the ship will move forward faster of 5 patch else it moves 2 patches. After that, when the ship is near enough (radius 3) with the bathers it will rescue, by turning the bathers into pink, and trigger rescued counter. At the same time, in other location bathers which energy depleted will trigger drown counter and bathers hit the right edge will trigger lost counter."
+  },
+  {
+    "objectID": "project2.html#modelling-result",
+    "href": "project2.html#modelling-result",
+    "title": "Modelling Rip Current Rescue using Agent Based Modelling",
+    "section": "Modelling Result",
+    "text": "Modelling Result\nEmbedded Video"
+  },
+  {
+    "objectID": "project4.html",
+    "href": "project4.html",
+    "title": "Scenario of investing a new supermarket in Borough of Havering.",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "project6.html",
+    "href": "project6.html",
+    "title": "Identify the most promising locations between 2 potential store investments.",
+    "section": "",
+    "text": "About this site"
   }
 ]

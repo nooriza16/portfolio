@@ -9,13 +9,28 @@ About this site
 
 # My Projects
 
-Here are some of my works:
-
--   <img src="project1-thumbnail.jpg" alt="Project 1" width="120" style="vertical-align:middle; margin-right:10px;"/> [Mapping Urban Growth](project1.qmd)\
-    A study on how cities expand using spatial data.
-
--   <img src="project2-thumbnail.jpg" alt="Project 2" width="120" style="vertical-align:middle; margin-right:10px;"/> [Machine Learning for Satellite Imagery](project2.qmd)\
-    Applying deep learning models to classify land use.
-
--   <img src="project3-thumbnail.jpg" alt="Project 3" width="120" style="vertical-align:middle; margin-right:10px;"/> [Spatial Network Analysis](project3.qmd)\
-    Using graph theory to understand urban transport systems.
++--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Here are some of works I created during my Master's          | :                                                                                                                                                                                                               |
++==============================================================+=================================================================================================================================================================================================================+
+| ![](images/project1-thumbnail.jpg){width="371" height="233"} | 1.  [**Predicting Obesity Prevalence in London**](project1.qmd)                                                                                                                                                 |
+|                                                              |                                                                                                                                                                                                                 |
+|                                                              |     Can childhood hardships predict obesity? Uncovering the link between early life adversity and obesity prevalence                                                                                            |
++--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/project2-thumbnail.jpg){width="373"}              | 2.  [**Modelling Rip-Current Rescue using Agent-Based Modelling**](project2.qmd)                                                                                                                                |
+|                                                              |                                                                                                                                                                                                                 |
+|                                                              |     Inspired by a rip current tragedy in my hometown, this model visualizes maritime rescue related to rip current incidents from the ground up, using Agent-Based Modelling.                                   |
++--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/project3-thumbnail.jpg){width="370"}              | 3.  [**Investigating London's Underground Resilience**](project3.qmd)                                                                                                                                           |
+|                                                              |                                                                                                                                                                                                                 |
+|                                                              |     A study on how to measure the importance of London's underground network under various scenarios of vulnerabilities.                                                                                        |
++--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/project4-thumbnail.jpg){width="374"}              | 4.  [**Supermarket Investment in the Borough of Havering, London**](project4.qmd)                                                                                                                               |
+|                                                              |                                                                                                                                                                                                                 |
+|                                                              |     Which location offers the greatest advantage for a new supermarket in the Borough of Havering? A comparison of two proposed sites to find the most beneficial spot                                          |
++--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/project5-thumbnail.jpg){width="373"}              | 5.   [Proposing Intersection Upgrade Locations in the City of Charlotte, North Carolina](project5.qmd)                                                                                                          |
+|                                                              |                                                                                                                                                                                                                 |
+|                                                              |     This project is part of a GIS assessment challenge, focused on helping the City of Charlotte decide where to upgrade intersections after receiving \$4.47 million to reduce pedestrian injuries and deaths. |
++--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/project6-thumbnail.jpg){width="413"}              | 6. [Mapping the distribution of Threatened Group Animals impacted by Forest Loss](project6.qmd)                                                                                                                 |
++--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

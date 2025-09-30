@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Portfolio - About</title>
+<title>Portfolio - Predicting Obesity Prevalence in London: Using Early Life Adversities</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -136,14 +102,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a></li>
+  <li><a href="#question-to-address" id="toc-question-to-address" class="nav-link" data-scroll-target="#question-to-address">Question to address</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result">Result</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Predicting Obesity Prevalence in London: Using Early Life Adversities</h1>
 </div>
 
 
@@ -158,15 +135,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>About this site</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<p>Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Alarmingly, one in five children is overweight or obese when they start school, and rising to one in three by the end of primary school (House of Commons, 2015). If current trends continue, Britain could become predominantly obese society by 2050 (Butland et al., 2027).</p>
+<p>Despite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo et al., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds et al., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by acomplex factors (Lingvay et al.&nbsp;(2024), looking at different angles might offer valuable insights.</p>
+<p>This work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors.</p>
+</section>
+<section id="question-to-address" class="level2">
+<h2 class="anchored" data-anchor-id="question-to-address">Question to address</h2>
+<p>RQ1: <em>How accurately can early life adversities predict obesity prevalence in pre-teen children in London using various predictive machine learning models?</em></p>
+<p>RQ2: <em>How do early life adversities contribute to pree-teen’s obesity prevalence in London?</em></p>
+</section>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<p><img src="images/clipboard-863421425.png" class="img-fluid"></p>
+</section>
+<section id="method" class="level2">
+<h2 class="anchored" data-anchor-id="method">Method</h2>
+<p>Addressing RQ1, linear regression is applied as it provides a simple, fast baseline forpredicting pre-teen obesity. For better accuracy, advanced models like RandomForest (RF) and XGBoost (XGB) are also applied, following Long et al . (2025)’smethodology on UK’s nutritional-based obesity research, as RF and XGB excel withhigh-dimensional, non-linearity, and predictive performance. Meanwhile, to addressRQ2, this study employs Shapley Additive exPlanations (SHAP) to identify featurescontributing to obesity prevalence. The diagram below presents the overall approach followed in this project, showingeach key task in the order they were performed.</p>
+<p><img src="images/clipboard-3105475180.png" class="img-fluid" width="550"></p>
+</section>
+<section id="result" class="level2">
+<h2 class="anchored" data-anchor-id="result">Result</h2>
+<p>1) Preliminary Result</p>
+<p><img src="images/clipboard-3696269288.png" class="img-fluid" width="307"></p>
+<p>The results highlight differences in model performance and generalization: Linear Regression generalizes well, but its predictive power is limited by the linearity assumption, which some features violate, as shown in the correlation matrix While Random Forest and XGBoost fit the training data well, they overfit on the test data. Despite this, they outperform Linear Regression in RMSE, with Random Forest performing better than XGBoost.’</p>
+<p>2) Hyperparameter tuning and Cross Validation result</p>
+<p>As Linear Regression does not have hyperparameters to tune, hyperparameters tuning will be applied to RF and XGB. GridSearchCV with 5-fold cross-validation is used to optimize performance, aiming to reduce test RMSE and improve R² while maintaining simplicity and efficiency.</p>
+<ul>
+<li><p><strong>Random Forest</strong></p>
+<p>In RF, the model’s previous overfitting result suggest that the tree might be too deep, thus max_depth is tested from shallow (3) to moderately deep (12), aiming to capture key patterns without fitting irrelevant details. The min_samples_split and min_samples_leaf is also tuned (up to 15) to prevent overly specific splits. Additionally, n_estimator is optimized, as more trees can improve performance.</p>
+<p><img src="images/clipboard-3923236352.png" class="img-fluid" width="451"></p>
+<p>The model reduces overfitting, boosts R² on test data, and sets max_depth to 5 for better generalization. We will examine this hyperparameter individually using validation curve to identify the point at which increasing it leads to overfitting.</p>
+<p><img src="images/clipboard-2667093654.png" class="img-fluid" width="426"></p>
+<p>We can see that after max_depth = 5 on validation curve (red), model’s performance on unseen data plateaus, indicating that beyond this point the model likely starting to overfit.</p></li>
+<li><p><strong>XGBoost</strong></p>
+<p>In XGBoost, to optimize model performance, we will vary max_depth to find an optimal depth. The learning_rate will be evaluate to achieve stable adjusted parameter after being iterated. We will also vary n_estimators , as the bigger the number the more stable the model performance. Additionally, reg_lambda will be tested to reduce overfitting by penalize large weights.</p>
+<p><img src="images/clipboard-3866622984.png" class="img-fluid" width="539"></p>
+<p>After tuning, R² increases, overfitting reduced significantly, and the model identifies a max_depth of 4 for good generalization. We will investigate this using a validation curve.</p>
+<p><img src="images/clipboard-1865093969.png" class="img-fluid" width="442"></p>
+<p>Despite its slightly fluctuative R² score, the pleateu starts to emerge from the max_depth = 4, suggesting that changing the hyperparameter within that range doesn’t significantly improve generalization performance and may increase the risk of overfitting.</p></li>
+</ul>
+<p>3) Comparison of Each Model</p>
+<p><img src="images/clipboard-721720499.png" class="img-fluid" width="363"></p>
+<p><img src="images/clipboard-1780831785.png" class="img-fluid" width="369"></p>
+<p>The accuracy of machine learning models in predicting pre-teen obesity prevalence in London using early life adversities varies. Random Forest and XGBoost models show higher R² and lower RMSE compared to the baseline linear regression model. Among advanced models, RF has a better performance than XGBoost, with higher R² (0.622 vs.&nbsp;0.603), with relatively small prediction errors compared to other models listed (0.0334 vs.&nbsp;0.0342 and 0.0354), and less overfitting before and after hyperparameter tuning.</p>
+<p>Additionally, Random Forest is faster than XGBoost, even with larger folds. However, even with advanced models like Random Forest, early life adversities can only explain 62.2% of the variance in pre-teen obesity prevalence in London. This leaves 37.8% unexplained. This happened as early life adversity associated with central adiposity in 2 ways, a physiological route (metabolic functioning) and psychosocial route (behaviour) (Davis et al., 2014). Meanwhile, the dataset used in this study does not include physiological aspects, only linking potential proxies for psychosocial, which may account for the unexplained variance.</p>
+<p>To address RQ2, we will compare feature contributions in the top models, Random Forest and XGBoost, using a SHAP beeswarm plot.</p>
+<p><img src="images/clipboard-681448306.png" class="img-fluid" width="516"></p>
+<p><img src="images/clipboard-3679890727.png" class="img-fluid" width="506"></p>
+<p>The Random Forest and XGBoost models consistently highlight child poverty, lackof educational qualifications, and mental health index as key contributing factors topre-teen obesity prevalence, underscoring their universal importance. This alignswith Kimbro and Denney ( 2013) which linked obesity with higher poverty level andlow education.</p>
+<p>The third-ranked mental health index further emphasizes the needfor integrating mental health to obesity interventions. The models diverge in their fourth and fifth rankings: RF places families with 3+children fourth and those working 49+ hours per week fifth, while XGB ranksworking 49+ hours fourth and lone parent unemployment fifth. RF highlightsresource strain in larger households and time strain potentially limiting healthymeal preparation or child supervision, while XGB points to struggles in single-parent households and overtime working (49+ hours exceeds the UK Working TimeDirective).</p>
+<p>These findings suggests that obesity interventions may benefit from incorporatingat-risk populations with childhood adversities, as well as evaluating supportschemes for work-life balance, unemployed single parents, and large households</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<ol type="1">
+<li>The Random Forest model outperforms XGBoost and Linear Regression in predicting pre-teen obesity prevalence with higher R² and lower RMSE.</li>
+<li>Both the Random Forest and XGBoost models consistently identify child poverty, limited educational qualifications, and mental health issues as major contributing factors to pre-teen obesity prevalence in London</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

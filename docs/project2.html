@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Portfolio - About</title>
+<title>Portfolio - Modelling Rip Current Rescue using Agent Based Modelling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -136,14 +102,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a></li>
+  <li><a href="#entities-and-state-variables" id="toc-entities-and-state-variables" class="nav-link" data-scroll-target="#entities-and-state-variables">Entities and State Variables</a></li>
+  <li><a href="#modelled-patches" id="toc-modelled-patches" class="nav-link" data-scroll-target="#modelled-patches">Modelled Patches</a></li>
+  <li><a href="#process-overview-and-scheduling" id="toc-process-overview-and-scheduling" class="nav-link" data-scroll-target="#process-overview-and-scheduling">Process overview and scheduling</a></li>
+  <li><a href="#modelling-result" id="toc-modelling-result" class="nav-link" data-scroll-target="#modelling-result">Modelling Result</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Modelling Rip Current Rescue using Agent Based Modelling</h1>
 </div>
 
 
@@ -158,15 +134,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>About this site</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<p>Rip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?</p>
+<p>To ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).</p>
+<p><img src="images/clipboard-1896609057.png" class="img-fluid" width="396"></p>
+<p>Figure 1 Rip Current Anatomy. Source : <a href="https://manoa.hawaii.edu/exploringourfluidearth/physical/coastal-interactions/wave-coast-interactions">University of Hawai’i</a></p>
+</section>
+<section id="entities-and-state-variables" class="level2">
+<h2 class="anchored" data-anchor-id="entities-and-state-variables">Entities and State Variables</h2>
+<p><img src="images/clipboard-2599180595.png" class="img-fluid" width="387"></p>
+<p>Global variables track drowned, lost, and rescued bathers while initial bathers and rescue time can be modified. Meanwhile, the model spans 66 x 42 grids, each grid represents 20m x 20m. Each tick represents one minute, and the simulation will end after 180 minutes. The strength of rip currents differ depends on the beach topography however in this model we use the recorded current strength of 1 m/s (Yuan et al., 2023) thus bathers moving one patch away equals with 20 m away from the shoreline on each tick.</p>
+</section>
+<section id="modelled-patches" class="level2">
+<h2 class="anchored" data-anchor-id="modelled-patches">Modelled Patches</h2>
+<p><img src="images/clipboard-3913222032.png" class="img-fluid" width="452"></p>
+<p>Figure 2 Modelled Patches, each number represent the strength current</p>
+<p><img src="images/clipboard-3368747096.png" class="img-fluid" width="455"></p>
+<p>Figure 3 Netlogo interface result</p>
+</section>
+<section id="process-overview-and-scheduling" class="level2">
+<h2 class="anchored" data-anchor-id="process-overview-and-scheduling">Process overview and scheduling</h2>
+<p>The intuition of the process repeated upon every tick are the bathers will be dragged away from the shoreline with movement depends on the currents’ strength. The movement will cost bathers energy, thus energy will be updated every ticks with detail as follows:</p>
+<ul>
+<li><p>neck area, each patches cost 4 to 7 energy</p></li>
+<li><p>head, each patches costs 4 to 5 energy</p></li>
+<li><p>In non-rip currents area near the shoreline, each patch will cost 2 energy</p></li>
+<li><p>In non-rip currents area away from the shoreline cost 3 energy</p></li>
+</ul>
+<p>After that, when the response time set, the ship will navigate its direction depending on target availability in radius of 5 patch either move randomly or to rescue. Upon sensing the target, the ship will move forward faster of 5 patch else it moves 2 patches. After that, when the ship is near enough (radius 3) with the bathers it will rescue, by turning the bathers into pink, and trigger rescued counter. At the same time, in other location bathers which energy depleted will trigger drown counter and bathers hit the right edge will trigger lost counter.</p>
+</section>
+<section id="modelling-result" class="level2">
+<h2 class="anchored" data-anchor-id="modelling-result">Modelling Result</h2>
+<p>Embedded Video</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
