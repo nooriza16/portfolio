@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About",
-    "section": "",
-    "text": "About Me\nHi, I’m Nooriza Maharani — a spatial data analyst. I have a major in Geography, with a specialization in Regional Development. I am currently a Master’s student in the Centre for Advanced Spatial Analysis, The Bartlett, University College London.\n\nConnect with me"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Projects",
-    "section": "",
-    "text": "About this site\n\n\nMy Projects\nHere are some of my works:\n\n Mapping Urban Growth\nA study on how cities expand using spatial data.\n Machine Learning for Satellite Imagery\nApplying deep learning models to classify land use.\n Spatial Network Analysis\nUsing graph theory to understand urban transport systems."
-  },
-  {
     "objectID": "project3.html",
     "href": "project3.html",
     "title": "About",
@@ -33,6 +12,20 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hi, I’m Nooriza Maharani — a spatial data analyst. I have a major in Geography, with a specialization in Regional Development. I am currently a Master’s student in the Centre for Advanced Spatial Analysis, The Bartlett, University College London.\n\nConnect with me"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Projects",
+    "section": "",
+    "text": "About this site\n\n\nMy Projects\nHere are some of my works:\n\n Mapping Urban Growth\nA study on how cities expand using spatial data.\n Machine Learning for Satellite Imagery\nApplying deep learning models to classify land use.\n Spatial Network Analysis\nUsing graph theory to understand urban transport systems."
   },
   {
     "objectID": "project2.html",
