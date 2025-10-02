@@ -2,8 +2,6 @@
 title: "Investigating London’s Underground Resilience (AM Peak Hour 07.00-10.00)"
 ---
 
-![](images/clipboard-3789271610.png)
-
 This study aims to investigate the resilience of London's underground system both as an infrastructural network and as a functional mode of transportation using a simplified network. It examines critical stations using various centrality measures, disruption scenarios, and their impact on passengers.
 
 **1) Which station is the most important?**
