@@ -1,8 +1,57 @@
 ---
-title: "Scenario of investing a new supermarket in Borough of Havering."
+title: "Identify the most promising locations between 2 potential store investments"
 ---
 
-About this site
+Prompt : Create an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.
 
-```         
-```
+------------------------------------------------------------------------
+
+Dealing with the scenario, I propose using a production-constrained model with an exponential function to estimate potential customer shopping at each store using various mode of transportation. The justification is based on the availability of fixed potential customer data (population data), meanwhile the number of customer shopping at destination remains unknown. With production models, we can identify which shop characteristics attract more customers and estimate the potential market for new store openings, as well as how they affect the market of competitors (Fotheringham, 2001).
+
+Additionally, the Production constrained model is commonly used in retail modelling application (Birkin et al., 2015; Newing, Clarke, and Clarke, 2015). This justification aligns with Oshan (2016) suggestion that model selection should depend on data availability and its analysis purpose. To understand how origin characteristics influence interaction patterns, the Production model should be calibrated with baseline data using parameters like γ and β from equation \[2\]. However, due to the unavailability of baseline data, we use calibrated parameters from commuting flows in London Borough as a proxy, an approach Fotheringham (2001) termed as 'educated guess' to address calibration challenges. This introduces a limitation, as the contexts and explanatory variables differ.
+
+![](images/clipboard-3417324343.png){width="359"}
+
+![](images/clipboard-1330260444.png){width="560"}
+
+where the cost function reflects a gradual decline in the number of customer shopping as distance increases, accounting for various transportation modes.
+
+**1) Which supermarket is more beneficial to invest?**
+
+If two new supermarkets are to be invested in the Borough of Havering with the same attractiveness, the more beneficial location would be in the E00011326 Output Areas (OAs) compared to E00011710. With a 2.5% larger population than E00011710 and being more accessible from other OAs in terms of distance, E00011326 can attract 28% more customers, totalling 2.502 potential customer shopping at the store compared to 1.401 from E00011710.
+
+![](images/clipboard-2146571493.png){width="546"}
+
+This occurs because when shopping centres are equally accessible, customers tend to prefer the more attractive one; and when they are equally attractive, shoppers usually favour the more accessible location (Birkin et al., 2015).
+
+**2) Let's say, there will be a transport increase how does it affect the proposed supermarket location?**
+
+Under the scenario of a sharp increase in transport costs, investing in E00011326 supermarket remains beneficial as it still generates more customers, increasing 2% from 2.502 to 2.586, compared to E00011710, which saw a 5% decline from 1.401 to 1.261 customer. The top 5 supermarket, undergoing change of customers, including new supermarket of E00011710 is visualized as follows:
+
+![](images/supermarket_transport_plot.jpg){width="643"}
+
+In this scenario, the potential customers shopping at each store are also redistributed with 60% of the 58 stores available in the Borough of Havering witnessing a decrease, 36% of stores gaining more customers, while 2 remain stagnant. The list of top 5 increase and decrease can be seen in table 8 and 9. The shift reflects how behaviour of customers also changes as they become E00011326 sensitive to travel cost/effort. This typically leads customers to prefer closer destinations, as a larger β causes the exponential distance decay function exp (− β𝑑𝑖𝑗 ) to decrease more rapidly with distance, reducing flows to farther destinations and redistributing them toward nearer ones.
+
+![](images/clipboard-1619802865.png){width="579"}
+
+The pattern of consumer’s shopping after doubling transport cost or represented by β change is visualized using plot below. It records the increasing preference to nearby supermarkets before facing a gradual decline to further location.
+
+![](images/clipboard-618391844.png){width="626"}
+
+**3) How many people accessing the chosen supermarket within 15 minutes walk?**
+
+Assuming an average walking speed of 1.2 m/s and that each building within a 15-minute walk of the new chosen supermarket (E00011326), in figure 10 , has at least two potential customers, thus the estimated total number of people accessing the supermarket is approximately 3.636. However, this estimate may be lower than the actual number if the area includes apartment buildings with more residents or higher if it contains many office buildings, which may not generate as many supermarket trips as estimated.
+
+![](images/clipboard-3889788691.png)
+
+**Remark :** The analysis is using python environment. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !
+
+**References**
+
+Birkin, M. et al. (2015) ‘Chapter 23: Applied spatial interaction modelling in economic geography: an example of the use of models for public sector planning’, in. Available at: <https://www.elgaronline.com/display/edcoll/9780857932662/9780857932662.00031.xml> (Accessed: 20 April 2025).
+
+Fotheringham, A. S. (2001) ‘Spatial Interaction Models’, in Smelser, N. J. and Baltes, P. B. (eds) International Encyclopedia of the Social & Behavioral Sciences. Oxford: Pergamon, pp. 14794–14800. doi: 10.1016/B0-08-043076-7/02519-5.
+
+Newing, A., Clarke, G. P. and Clarke, M. (2015) ‘Developing and Applying a Disaggregated Retail Location Model with Extended Retail Demand Estimations’, Geographical Analysis, 47(3), pp. 219–239. doi: 10.1111/gean.12052.
+
+Oshan, T. M. (2016) ‘A primer for working with the Spatial Interaction modeling (SpInt) module in the python spatial analysis library (PySAL)’, REGION, 3(2), p. 11. doi: 10.18335/region.v3i2.175.
