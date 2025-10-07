@@ -19,3 +19,7 @@ All the dataset used are open source, enabling a reproduceability code for conse
 ![](images/clipboard-3507853930.png)
 
 ## Result
+
+![](images/clipboard-4160313596.png)
+
+![](images/clipboard-3662604838.png)

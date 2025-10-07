@@ -160,7 +160,7 @@ Actually the analysis will be deeper if using the network dataset as it helps to
 
 The purpose is to discover clusters in space. Performing DBSCAN requires:
 
-a. eps
+a.  eps
 
 Using Ripley's K to get an initial value for further choosing the good epsilon & validating the value using KNN Distribution plot to find a suitable eps value based on the ‘knee’
 
@@ -183,7 +183,7 @@ selected_crash1.ppp <- ppp(x=selected_crash1 @coords[,1],
                           window=window)
 ```
 
-####  Intuition to find Epsilon with Ripley's K
+#### Intuition to find Epsilon with Ripley's K
 
 ```{r}
 #Plotting the RIpley's K graph
