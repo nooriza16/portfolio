@@ -116,7 +116,7 @@
     "href": "project1.html#conclusion",
     "title": "Predicting Obesity Prevalence in London: Using Early Life Adversities",
     "section": "Conclusion",
-    "text": "Conclusion\n\nThe Random Forest model outperforms XGBoost and Linear Regression in predicting pre-teen obesity prevalence with higher R² and lower RMSE.\nBoth the Random Forest and XGBoost models consistently identify child poverty, limited educational qualifications, and mental health issues as major contributing factors to pre-teen obesity prevalence in London"
+    "text": "Conclusion\n\nThe Random Forest model outperforms XGBoost and Linear Regression in predicting pre-teen obesity prevalence with higher R² and lower RMSE.\nBoth the Random Forest and XGBoost models consistently identify child poverty, limited educational qualifications, and mental health issues as major contributing factors to pre-teen obesity prevalence in London\n\nReflection\n\nPerforming linear regression on several X indicators, means that we need to check the multiple linear regression assumptions such as multicollinearity etc."
   },
   {
     "objectID": "index.html",
@@ -191,35 +191,35 @@
   {
     "objectID": "project6.html",
     "href": "project6.html",
-    "title": "Mapping the distribution of Threatened Group Animalsimpacted by Forest Loss",
+    "title": "Mapping the distribution of Threatened Group Animals impacted by Forest Loss",
     "section": "",
     "text": "Despite being one of the world’s biodiversity hotspots and facing immense threats, Indonesian Borneo still lacks a comprehensive dataset that identifies where forest loss is occurring and which species’ habitats are being affected. This gap poses a significant challenge to fulfilling the commitments of the Kunming-Montreal Global Biodiversity Framework and advancing broader conservation efforts.\nUsing Google Earth Engine, this research aims to map and quantify the extent to which forest loss affects habitat loss for threatened animal groups, while also assessing the intactness of biodiversity in the remaining habitat.\nAll the dataset used are open source, enabling a reproduceability code for conservation practices or other purposes."
   },
   {
     "objectID": "project6.html#context",
     "href": "project6.html#context",
-    "title": "Mapping the distribution of Threatened Group Animalsimpacted by Forest Loss",
+    "title": "Mapping the distribution of Threatened Group Animals impacted by Forest Loss",
     "section": "",
     "text": "Despite being one of the world’s biodiversity hotspots and facing immense threats, Indonesian Borneo still lacks a comprehensive dataset that identifies where forest loss is occurring and which species’ habitats are being affected. This gap poses a significant challenge to fulfilling the commitments of the Kunming-Montreal Global Biodiversity Framework and advancing broader conservation efforts.\nUsing Google Earth Engine, this research aims to map and quantify the extent to which forest loss affects habitat loss for threatened animal groups, while also assessing the intactness of biodiversity in the remaining habitat.\nAll the dataset used are open source, enabling a reproduceability code for conservation practices or other purposes."
   },
   {
     "objectID": "project6.html#dataset",
     "href": "project6.html#dataset",
-    "title": "Mapping the distribution of Threatened Group Animalsimpacted by Forest Loss",
+    "title": "Mapping the distribution of Threatened Group Animals impacted by Forest Loss",
     "section": "Dataset",
     "text": "Dataset"
   },
   {
     "objectID": "project6.html#method",
     "href": "project6.html#method",
-    "title": "Mapping the distribution of Threatened Group Animalsimpacted by Forest Loss",
+    "title": "Mapping the distribution of Threatened Group Animals impacted by Forest Loss",
     "section": "Method",
     "text": "Method"
   },
   {
     "objectID": "project6.html#result",
     "href": "project6.html#result",
-    "title": "Mapping the distribution of Threatened Group Animalsimpacted by Forest Loss",
+    "title": "Mapping the distribution of Threatened Group Animals impacted by Forest Loss",
     "section": "Result",
     "text": "Result\n\n\nLink to GEE platform:\nhttps://code.earthengine.google.com/8b463b50ceaa044a38e15edf600495eb\nhttps://code.earthengine.google.com/8b463b50ceaa044a38e15edf600495eb&lt;/a&gt;&lt;a href=\"https://your-app-url.earthengine.app/view/myapp%22\"&gt;\"&lt;/a&gt;width=\"100%\" height=\"600\" style=\"border:none;\"&gt;&lt;/p&gt;"
   }

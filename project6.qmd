@@ -1,5 +1,5 @@
 ---
-title: "Mapping the distribution of Threatened Group Animalsimpacted by Forest Loss"
+title: "Mapping the distribution of Threatened Group Animals impacted by Forest Loss"
 ---
 
 ## Context
@@ -27,7 +27,3 @@ All the dataset used are open source, enabling a reproduceability code for conse
 Link to GEE platform:
 
 <https://code.earthengine.google.com/8b463b50ceaa044a38e15edf600495eb>
-
-`<iframe src="`{=html}<https://code.earthengine.google.com/8b463b50ceaa044a38e15edf600495eb>[`"`{=html}](https://your-app-url.earthengine.app/view/myapp")` width="100%" height="600" style="border:none;">`{=html}
-
-</iframe>
