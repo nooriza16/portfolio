@@ -1,8 +1,15 @@
 ---
-title: "Identify the most promising locations between 2 potential store investments."
+title: "Healthcare Accessibility with ArcGIS Network Analysis"
 ---
 
-About this site
+![](images/clipboard-268178790.png){width="597"}
 
-```         
-```
+source : [ESRI](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/types-of-network-analyses.htm)
+
+The project aims to visualize how people access healthcare services within a specific time travel. As a Geospatial Analyst, the team and I, we formulate a framework that address the data inavailability, tune up the default setting of ArcGIS Network Analysis, and validating our modelling result in a real world settings.
+
+We use network analysis in ArcGIS to model the range of services that can be accessed within a multiplication of 15 minutes. What made this work unique is that we applied the model in archipelago region, using the assumption of Euclidian distance as a ship’s route. Using this model, we would aim to look region that lied outside the golden hour of medical distances, as a data used to inform the policy maker in allocating budget or help in improving healthcare.
+
+![](images/clipboard-3798883880.png)
+
+Two datasets are used as an input : network + service points. The networks should contains the attribute such as distance (in metre) and speed (m/s). With these two, then we can easily calculate the time. By running with Network Analysis algorithm we can create a isochrone area for each time range. The challenge in building this model is that we dont have the ship route, then we estimate the route using a straight line and pick the average speed of mobile health boat. My reflectionon this project is that we need several scenarios to address the overestimation and underestimation of this result, as we only pick one speed, wheras there are a various type of boat to access the healthcare.
