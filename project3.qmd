@@ -8,15 +8,21 @@ This study aims to investigate the resilience of London's underground system bot
 
 Well, there are several importance measure can be used here.. To identify important stations based on how many connections a station has we use *degree centrality*. Turns out Stratford has the most connections ! Well, UCL East is well located then :)
 
-![](images/clipboard-3842412742.png)To identify the importance of stations by considering its average distance to all other stations, we use *closeness centrality*. The distance assumed in this study is based on hops between stations (not physical distance), as passengers usually perceive 'farness' by the number of stations passed, which is generally more convenient than changing platforms for shorter physical distances (Göransson and Andersson, 2023).
+![](images/clipboard-3842412742.png)
+
+**Fig 3.1** Stations importance based on Degree Centrality
+
+To identify the importance of stations by considering its average distance to all other stations, we use *closeness centrality*. The distance assumed in this study is based on hops between stations (not physical distance), as passengers usually perceive 'farness' by the number of stations passed, which is generally more convenient than changing platforms for shorter physical distances (Göransson and Andersson, 2023).
 
 ![](images/clipboard-3898950537.png)
 
-Green Park, Bank and Museum, and King’s Cross St. Pancras are the top 3 crucial stations based on closeness centrality, indicating that they are best facilitating efficient movement across network.
+**Fig 3.2** Stations importance based on Closeness Centrality
 
-Meanwhile, to identify the importance of node by counting how frequently it lies on the shortest paths between other stations we use *betweenness* centrality.
+Green Park, Bank and Museum, and King’s Cross St. Pancras are the top 3 crucial stations based on closeness centrality, indicating that they are best facilitating efficient movement across network. Meanwhile, to identify the importance of node by counting how frequently it lies on the shortest paths between other stations we use *betweenness* centrality.
 
-![The most crucial stations based on betweenness centrality are Stratford, Bank, and Monument, with Liverpool Street following closely. This highlights their importance as transit hubs. Despite its low degree centrality, Liverpool Street has high betweenness centrality. Newman (2010) described this situation as a low-degree node with high betweenness, acting as a bridge between two network clusters, making Liverpool Street as a hub to and from East London.](images/clipboard-3879360423.png)
+![**Fig 3.3** Stations importance based on Betweenness Centrality](images/clipboard-3879360423.png)
+
+The most crucial stations based on betweenness centrality are Stratford, Bank, and Monument, with Liverpool Street following closely. This highlights their importance as transit hubs. Despite its low degree centrality, Liverpool Street has high betweenness centrality. Newman (2010) described this situation as a low-degree node with high betweenness, acting as a bridge between two network clusters, making Liverpool Street as a hub to and from East London.
 
 **2) Which station if being disrupted could impact the network's cohesion?**
 
@@ -24,9 +30,13 @@ The scenario is conducted by sequentially remove the highest centrality, then re
 
 ![](images/clipboard-2405650671.png)
 
+**Fig 3.4** Number of connected networks (connected tube line) after station removal
+
 On the other hand, the most damaging removal occurs with 10 constant removal to nodes with high betweenness centrality, as evidenced by a sharp decline in the largest connected component (LCC = 170) compared to degree and closeness centrality, with LCC 341 and 194 respectively (Figure 5). This suggests that nodes with the highest betweenness centrality are vital for maintaining global connectivity, as their disruption prevents all stations from being reachable from one another.
 
 ![](images/clipboard-3849582078.png)
+
+**Fig 3.5** Comparison of largest connected tube line after station removal
 
 So far, we only calculated the network importance without considering the passenger flow. In reality, the importance of London's underground also related to how many people come in and out from and to a station. When flows are considered, degree and closeness centrality remains unchanged as it measures node proximity, unaffected by flow quantity.
 
@@ -39,6 +49,8 @@ With flow data, Green Park and Bank & Monument emerge as the most critical stati
 **3) When flow considered, which station is being impacted the most by the closure scenario? and how many people are affected?**
 
 ![![](images/clipboard-3290414035.png){width="656"}](images/clipboard-946465454.png){width="646"}
+
+**Fig 3.6** Top 5 of in and outflow of passengers
 
 The largest flows are found at journey from Waterloo Station to Bank & Monument. If Waterloo station is closed, 67.372 people who use Waterloo as the origin to reach Bank & Monument will be directly affected. Potentially there will be 1.475.019 people have to change their route as they planned to terminate at Waterloo.
 

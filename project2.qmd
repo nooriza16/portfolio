@@ -12,7 +12,7 @@ To ensure the model is realistic enough to portray rip currents, I use patterns 
 
 ![](images/clipboard-1896609057.png){width="396"}
 
-Figure 1 Rip Current Anatomy. Source : [University of Hawai’i](https://manoa.hawaii.edu/exploringourfluidearth/physical/coastal-interactions/wave-coast-interactions)
+**Fig 2.1** Rip Current Anatomy. Source : [University of Hawai’i](https://manoa.hawaii.edu/exploringourfluidearth/physical/coastal-interactions/wave-coast-interactions)
 
 ## Entities and State Variables
 
@@ -24,11 +24,11 @@ Global variables track drowned, lost, and rescued bathers while initial bathers 
 
 ![](images/clipboard-3913222032.png){width="452"}
 
-Figure 2 Modelled Patches, each number represent the strength current
+**Fig 2.2** Modelled Patches, each number represent the strength current
 
 ![](images/clipboard-3368747096.png){width="455"}
 
-Figure 3 Netlogo interface result
+**Fig 2.3** Netlogo interface result
 
 ## Process overview and scheduling
 

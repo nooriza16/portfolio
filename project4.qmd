@@ -2,7 +2,9 @@
 title: "Identify the most promising locations between 2 potential store investments"
 ---
 
-Prompt : Create an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.
+## Prompt : 
+
+Create an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.
 
 ------------------------------------------------------------------------
 
@@ -30,6 +32,8 @@ Under the scenario of a sharp increase in transport costs, investing in E0001132
 
 ![](images/supermarket_transport_plot.jpg){width="643"}
 
+**Fig 4.1** Top 5 supermarket with increase/decrease customer visit following a spike in transport cost
+
 In this scenario, the potential customers shopping at each store are also redistributed with 60% of the 58 stores available in the Borough of Havering witnessing a decrease, 36% of stores gaining more customers, while 2 remain stagnant. The list of top 5 increase and decrease can be seen in table 8 and 9. The shift reflects how behaviour of customers also changes as they become E00011326 sensitive to travel cost/effort. This typically leads customers to prefer closer destinations, as a larger β causes the exponential distance decay function exp (− β𝑑𝑖𝑗 ) to decrease more rapidly with distance, reducing flows to farther destinations and redistributing them toward nearer ones.
 
 ![](images/clipboard-1619802865.png){width="579"}
@@ -38,11 +42,15 @@ The pattern of consumer’s shopping after doubling transport cost or represente
 
 ![](images/clipboard-618391844.png){width="626"}
 
+**Fig 4.2** Customer per distance before and after transport cost increase
+
 **3) How many people accessing the chosen supermarket within 15 minutes walk?**
 
 Assuming an average walking speed of 1.2 m/s and that each building within a 15-minute walk of the new chosen supermarket (E00011326), in figure 10 , has at least two potential customers, thus the estimated total number of people accessing the supermarket is approximately 3.636. However, this estimate may be lower than the actual number if the area includes apartment buildings with more residents or higher if it contains many office buildings, which may not generate as many supermarket trips as estimated.
 
 ![](images/clipboard-3889788691.png)
+
+**Fig 4.3** 15-minutes catchment area of the chosen supermarket
 
 **Remark :** The analysis is using python environment. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !
 

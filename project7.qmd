@@ -4,12 +4,28 @@ title: "Healthcare Accessibility with ArcGIS Network Analysis"
 
 ![](images/clipboard-268178790.png){width="597"}
 
-source : [ESRI](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/types-of-network-analyses.htm)
+**Fig 7.1** Network Analyst Framework in ArcGIS source : [ESRI](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/types-of-network-analyses.htm)
 
 The project aims to visualize how people access healthcare services within a specific time travel. As a Geospatial Analyst, the team and I, we formulate a framework that address the data inavailability, tune up the default setting of ArcGIS Network Analysis, and validating our modelling result in a real world settings.
 
 We use network analysis in ArcGIS to model the range of services that can be accessed within a multiplication of 15 minutes. What made this work unique is that we applied the model in archipelago region, using the assumption of Euclidian distance as a ship’s route. Using this model, we would aim to look region that lied outside the golden hour of medical distances, as a data used to inform the policy maker in allocating budget or help in improving healthcare.
 
+Two datasets are used as an input : OSM network + healthcare service points. The networks should contains the attribute such as distance (in metre) and speed (m/s). Common issues usually arise when we input these two dataset are unconnected network (check the network's topology) and unlocated facilities. Unlocated facilities are issue that arise when healthcare service points are located far from the networks, thus the algorithm will flag these facilities as unlocated. To address this issue we can : 1) check the facility's coordinate 2) update the network dataset.
+
+![](images/network_.jpg){width="354"}
+
+**Fig 7.2 Common issues during pre-processing**
+
+![](images/unconnected.jpg)
+
+**Fig 7.3 Comparison of generated-isochrone from unconnected and connected networks**
+
+With these two inputs, we can easily calculate the time. By running a Network Analysis algorithm, we can generate isochrone (service areas) for each time range. The main challenge to build this model is the lack of ship routes connecting small islands into the main islands, where a hospital is usually located. As a workaround, we estimate the routes using a straight lines and apply the average speed of a mobile health boat.
+
 ![](images/clipboard-3798883880.png)
 
-Two datasets are used as an input : network + service points. The networks should contains the attribute such as distance (in metre) and speed (m/s). With these two, we can easily calculate the time. By running with Network Analysis algorithm we can create a isochrone area for each time range. The challenge in building this model is that we dont have the ship route, then we estimate the route using a straight line and pick the average speed of mobile health boat. My reflectionon this project is that we need several scenarios to address the overestimation and underestimation of this result, as we only pick one speed, wheras there are a various type of boat to access the healthcare.
+**Fig 7.3** The result of service areas from 15 to 6 hours range in a region with sub and main islands
+
+## Reflection
+
+My reflection on this project is that we need several scenarios to address the overestimation and underestimation in the result. Currently, we use a single speed, whereas in reality various type of boat are used to access the healthcare facilities, each with different speeds. Rather than imposing a one-size-fits-all model, I intend to use this model as a benchmark to better understand regions with different characteristics. For example, if a particular island has limited or less reliable modes of transportation, the interpretation of the results should be made with awareness that the model may overestimate actual accessibility. This highlights the importance of contextualizing the findings based on local conditions.
