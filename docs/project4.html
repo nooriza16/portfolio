@@ -102,7 +102,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#prompt" id="toc-prompt" class="nav-link active" data-scroll-target="#prompt">Prompt :</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -124,7 +130,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Prompt : Create an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.</p>
+<section id="prompt" class="level2">
+<h2 class="anchored" data-anchor-id="prompt">Prompt :</h2>
+<p>Create an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.</p>
 <hr>
 <p>Dealing with the scenario, I propose using a production-constrained model with an exponential function to estimate potential customer shopping at each store using various mode of transportation. The justification is based on the availability of fixed potential customer data (population data), meanwhile the number of customer shopping at destination remains unknown. With production models, we can identify which shop characteristics attract more customers and estimate the potential market for new store openings, as well as how they affect the market of competitors (Fotheringham, 2001).</p>
 <p>Additionally, the Production constrained model is commonly used in retail modelling application (Birkin et al., 2015; Newing, Clarke, and Clarke, 2015). This justification aligns with Oshan (2016) suggestion that model selection should depend on data availability and its analysis purpose. To understand how origin characteristics influence interaction patterns, the Production model should be calibrated with baseline data using parameters like γ and β from equation [2]. However, due to the unavailability of baseline data, we use calibrated parameters from commuting flows in London Borough as a proxy, an approach Fotheringham (2001) termed as ‘educated guess’ to address calibration challenges. This introduces a limitation, as the contexts and explanatory variables differ.</p>
@@ -138,13 +146,16 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>2) Let’s say, there will be a transport increase how does it affect the proposed supermarket location?</strong></p>
 <p>Under the scenario of a sharp increase in transport costs, investing in E00011326 supermarket remains beneficial as it still generates more customers, increasing 2% from 2.502 to 2.586, compared to E00011710, which saw a 5% decline from 1.401 to 1.261 customer. The top 5 supermarket, undergoing change of customers, including new supermarket of E00011710 is visualized as follows:</p>
 <p><img src="images/supermarket_transport_plot.jpg" class="img-fluid" width="643"></p>
+<p><strong>Fig 4.1</strong> Top 5 supermarket with increase/decrease customer visit following a spike in transport cost</p>
 <p>In this scenario, the potential customers shopping at each store are also redistributed with 60% of the 58 stores available in the Borough of Havering witnessing a decrease, 36% of stores gaining more customers, while 2 remain stagnant. The list of top 5 increase and decrease can be seen in table 8 and 9. The shift reflects how behaviour of customers also changes as they become E00011326 sensitive to travel cost/effort. This typically leads customers to prefer closer destinations, as a larger β causes the exponential distance decay function exp (− β𝑑𝑖𝑗 ) to decrease more rapidly with distance, reducing flows to farther destinations and redistributing them toward nearer ones.</p>
 <p><img src="images/clipboard-1619802865.png" class="img-fluid" width="579"></p>
 <p>The pattern of consumer’s shopping after doubling transport cost or represented by β change is visualized using plot below. It records the increasing preference to nearby supermarkets before facing a gradual decline to further location.</p>
 <p><img src="images/clipboard-618391844.png" class="img-fluid" width="626"></p>
+<p><strong>Fig 4.2</strong> Customer per distance before and after transport cost increase</p>
 <p><strong>3) How many people accessing the chosen supermarket within 15 minutes walk?</strong></p>
 <p>Assuming an average walking speed of 1.2 m/s and that each building within a 15-minute walk of the new chosen supermarket (E00011326), in figure 10 , has at least two potential customers, thus the estimated total number of people accessing the supermarket is approximately 3.636. However, this estimate may be lower than the actual number if the area includes apartment buildings with more residents or higher if it contains many office buildings, which may not generate as many supermarket trips as estimated.</p>
 <p><img src="images/clipboard-3889788691.png" class="img-fluid"></p>
+<p><strong>Fig 4.3</strong> 15-minutes catchment area of the chosen supermarket</p>
 <p><strong>Remark :</strong> The analysis is using python environment. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !</p>
 <p><strong>References</strong></p>
 <p>Birkin, M. et al.&nbsp;(2015) ‘Chapter 23: Applied spatial interaction modelling in economic geography: an example of the use of models for public sector planning’, in. Available at: <a href="https://www.elgaronline.com/display/edcoll/9780857932662/9780857932662.00031.xml" class="uri">https://www.elgaronline.com/display/edcoll/9780857932662/9780857932662.00031.xml</a> (Accessed: 20 April 2025).</p>
@@ -153,6 +164,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Oshan, T. M. (2016) ‘A primer for working with the Spatial Interaction modeling (SpInt) module in the python spatial analysis library (PySAL)’, REGION, 3(2), p.&nbsp;11. doi: 10.18335/region.v3i2.175.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -155,6 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="method">Method</h2>
 <p>Addressing RQ1, linear regression is applied as it provides a simple, fast baseline forpredicting pre-teen obesity. For better accuracy, advanced models like RandomForest (RF) and XGBoost (XGB) are also applied, following Long et al . (2025)’smethodology on UK’s nutritional-based obesity research, as RF and XGB excel withhigh-dimensional, non-linearity, and predictive performance. Meanwhile, to addressRQ2, this study employs Shapley Additive exPlanations (SHAP) to identify featurescontributing to obesity prevalence. The diagram below presents the overall approach followed in this project, showingeach key task in the order they were performed.</p>
 <p><img src="images/clipboard-3105475180.png" class="img-fluid" width="550"></p>
+<p><strong>Fig 1.1</strong> Workflow Diagram</p>
 </section>
 <section id="result" class="level2">
 <h2 class="anchored" data-anchor-id="result">Result</h2>
@@ -169,22 +170,27 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/clipboard-3923236352.png" class="img-fluid" width="451"></p>
 <p>The model reduces overfitting, boosts R² on test data, and sets max_depth to 5 for better generalization. We will examine this hyperparameter individually using validation curve to identify the point at which increasing it leads to overfitting.</p>
 <p><img src="images/clipboard-2667093654.png" class="img-fluid" width="426"></p>
+<p><strong>Fig 1.2</strong> Validation curve for Random Forest</p>
 <p>We can see that after max_depth = 5 on validation curve (red), model’s performance on unseen data plateaus, indicating that beyond this point the model likely starting to overfit.</p></li>
 <li><p><strong>XGBoost</strong></p>
 <p>In XGBoost, to optimize model performance, we will vary max_depth to find an optimal depth. The learning_rate will be evaluate to achieve stable adjusted parameter after being iterated. We will also vary n_estimators , as the bigger the number the more stable the model performance. Additionally, reg_lambda will be tested to reduce overfitting by penalize large weights.</p>
 <p><img src="images/clipboard-3866622984.png" class="img-fluid" width="539"></p>
 <p>After tuning, R² increases, overfitting reduced significantly, and the model identifies a max_depth of 4 for good generalization. We will investigate this using a validation curve.</p>
 <p><img src="images/clipboard-1865093969.png" class="img-fluid" width="442"></p>
+<p><strong>Fig 1.3</strong> Validation curve for XGBoost</p>
 <p>Despite its slightly fluctuative R² score, the pleateu starts to emerge from the max_depth = 4, suggesting that changing the hyperparameter within that range doesn’t significantly improve generalization performance and may increase the risk of overfitting.</p></li>
 </ul>
 <p>3) Comparison of Each Model</p>
 <p><img src="images/clipboard-721720499.png" class="img-fluid" width="363"></p>
 <p><img src="images/clipboard-1780831785.png" class="img-fluid" width="369"></p>
+<p><strong>Fig 1.3</strong> Comparison of 3 models</p>
 <p>The accuracy of machine learning models in predicting pre-teen obesity prevalence in London using early life adversities varies. Random Forest and XGBoost models show higher R² and lower RMSE compared to the baseline linear regression model. Among advanced models, RF has a better performance than XGBoost, with higher R² (0.622 vs.&nbsp;0.603), with relatively small prediction errors compared to other models listed (0.0334 vs.&nbsp;0.0342 and 0.0354), and less overfitting before and after hyperparameter tuning.</p>
 <p>Additionally, Random Forest is faster than XGBoost, even with larger folds. However, even with advanced models like Random Forest, early life adversities can only explain 62.2% of the variance in pre-teen obesity prevalence in London. This leaves 37.8% unexplained. This happened as early life adversity associated with central adiposity in 2 ways, a physiological route (metabolic functioning) and psychosocial route (behaviour) (Davis et al., 2014). Meanwhile, the dataset used in this study does not include physiological aspects, only linking potential proxies for psychosocial, which may account for the unexplained variance.</p>
 <p>To address RQ2, we will compare feature contributions in the top models, Random Forest and XGBoost, using a SHAP beeswarm plot.</p>
 <p><img src="images/clipboard-681448306.png" class="img-fluid" width="516"></p>
+<p><strong>Fig 1. 4</strong> Importance Value in Random Forest</p>
 <p><img src="images/clipboard-3679890727.png" class="img-fluid" width="506"></p>
+<p><strong>Fig 1. 5</strong> Importance Value in XGBoost</p>
 <p>The Random Forest and XGBoost models consistently highlight child poverty, lackof educational qualifications, and mental health index as key contributing factors topre-teen obesity prevalence, underscoring their universal importance. This alignswith Kimbro and Denney ( 2013) which linked obesity with higher poverty level andlow education.</p>
 <p>The third-ranked mental health index further emphasizes the needfor integrating mental health to obesity interventions. The models diverge in their fourth and fifth rankings: RF places families with 3+children fourth and those working 49+ hours per week fifth, while XGB ranksworking 49+ hours fourth and lone parent unemployment fifth. RF highlightsresource strain in larger households and time strain potentially limiting healthymeal preparation or child supervision, while XGB points to struggles in single-parent households and overtime working (49+ hours exceeds the UK Working TimeDirective).</p>
 <p>These findings suggests that obesity interventions may benefit from incorporatingat-risk populations with childhood adversities, as well as evaluating supportschemes for work-life balance, unemployed single parents, and large households</p>
