@@ -20,6 +20,6 @@ When we digitize manually, the feature might get an error such as overlapping, i
 
 **Reference:**
 
-Copy parallel ArcGIS Pro
+[Copy parallel ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/help/editing/copy-line-features-parallel.htm)
 
-Topology Rules ArcGIS Pro
+[Topology Rules ArcGIS Pro](https://pro.arcgis.com/en/pro-app/latest/help/editing/geodatabase-topology-rules-for-polygon-features.htm)
