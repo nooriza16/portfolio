@@ -1,0 +1,7 @@
+---
+title: "Composing & Handling Field Survey Activities Using ArcMap"
+---
+
+Within this job, my duty is to provide a technical consultancy to assist door-to-door data collection by designing a land-parcel map for densely populated area using ArcMAP, with the goals to :
+
+![](images/avenza.jpg)

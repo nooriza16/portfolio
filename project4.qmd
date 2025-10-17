@@ -2,7 +2,7 @@
 title: "Identify the most promising locations between 2 potential store investments"
 ---
 
-## Prompt : 
+## Prompt :
 
 Create an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.
 

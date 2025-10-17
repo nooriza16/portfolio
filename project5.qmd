@@ -2,7 +2,7 @@
 title: "Evaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina "
 ---
 
-*This project is part of a GIS course assessment challenge using Rstudio, focused on helping the City of Charlotte decide where to upgrade intersections after receiving \$4.47 million to reduce pedestrian injuries and deaths.*
+*This project is part of a GIS course assessment challenge using Rstudio, with scenario focused on helping the City of Charlotte decide where to upgrade intersections after receiving \$4.47 million to reduce pedestrian injuries and deaths.*
 
 ## Project Summary
 
@@ -17,11 +17,21 @@ title: "Evaluating a proposed intersection upgrade locations in The City of CHar
 
 ## **Dataset**
 
-1.  Main Dataset : Fatal_or_Serious_Injury_Crashes (shp points) From 2019-2023 I use the pedestrian-related crashes from 2019-2023, with key columns such as: year, month, day, crash type Despite the pandemic occurence in 2020-2022 this analysis includes those data because they still could give values of the occurences and pattern.
+| Name                                              | Source                                                                                                                                   |
+|----------------|--------------------------------------------------------|
+| Crash locations                                   | <https://data.charlottenc.gov/datasets/charlotte::fatal-or-serious-injury-crashes/about>                                                 |
+| All proposed intersection improvement locations:  | <https://data.charlottenc.gov/datasets/charlotte::safe-streets-for-all-grant-projects-1/explore?location=35.202947%2C-80.818650%2C10.55> |
+| Commuting block groups                            | <https://data.charlottenc.gov/datasets/b3b8d817abaa4128ac24229a86f98938/explore?location=34.860646%2C-80.327097%2C7.45>                  |
 
-2.  Main Dataset : Safe_Streets_For_All_Grant_Projects (shp points) Dataset of intersection improvement locations Project that contains gisid, location, Description of upgrade projects
+Context:
 
-3.  Census_Commuting_Block_Groups (shp polygon) Contain geo-name with total 555 block groups, this data is chosen because finer level of detailand are specifically used to analyze commuting patterns
+1.   Fatal_or_Serious_Injury_Crashes (shp points) From 2019-2023
+
+    I use the pedestrian-related crashes from 2019-2023, with key columns such as: year, month, day, crash type Despite the pandemic occurence in 2020-2022 this analysis includes those data because they still could give values of the occurences and pattern.
+
+2.  Safe_Streets_For_All_Grant_Projects (shp points) Dataset of intersection improvement locations Project that contains gisid, location, Description of upgrade projects
+
+3.  Census_Commuting_Block_Groups (shp polygon) Contain geo-name with total 555 block groups and are specifically used to analyze commuting patterns
 
 All Datasets projected on NAD83 / North Carolina (ftUS) in US Feet
 
@@ -160,11 +170,11 @@ Actually the analysis will be deeper if using the network dataset as it helps to
 
 The purpose is to discover clusters in space. Performing DBSCAN requires:
 
-a.  eps
+a.  Epsilon
 
 Using Ripley's K to get an initial value for further choosing the good epsilon & validating the value using KNN Distribution plot to find a suitable eps value based on the ‘knee’
 
-b\. min pts
+b\. Minimum Number of Neighbours (min pts)
 
 I would choose the median number occurences (n) that spans from 0 to 5 in the commuting block; so the min pts is 3.
 
