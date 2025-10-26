@@ -102,7 +102,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset"><strong>Dataset</strong></a></li>
+  <li><a href="#analytics" id="toc-analytics" class="nav-link" data-scroll-target="#analytics">Analytics</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -124,7 +131,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This study aims to investigate the resilience of London’s underground system both as an infrastructural network and as a functional mode of transportation using a simplified network. It examines critical stations using various centrality measures, disruption scenarios, and their impact on passengers.</p>
+<p>Have you ever experienced using public transport, it does not operate the way you thought it would? You check upon your maps and voila diversion. Either you have to wait, which is unlikely, or change into other transports choice. What if those scenario happened in the most important node of transport, in a peak hour?</p>
+<p>To make the impacts less destructive, we build a mitigation scenario, therefeore when there is a disruption in the most important station in the most critical hours we could provide alternatives for passengers without overwhelming the rest of the network. So how do we do this?</p>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset"><strong>Dataset</strong></h2>
+<ol type="1">
+<li>London Tube Netwowk (Simplified into a single line)</li>
+<li>Londons Passenger’s flow</li>
+</ol>
+</section>
+<section id="analytics" class="level2">
+<h2 class="anchored" data-anchor-id="analytics">Analytics</h2>
+<p>Before we jump into the scenario, we have first to ask ourselves a question what does the most important station mean? is it the most connected one? the longest line? or the most used for transit? In using NetworkX in python environment we can answer all of those ‘importance’ questions.</p>
 <p><strong>1) Which station is the most important?</strong></p>
 <p>Well, there are several importance measure can be used here.. To identify important stations based on how many connections a station has we use <em>degree centrality</em>. Turns out Stratford has the most connections ! Well, UCL East is well located then :)</p>
 <p><img src="images/clipboard-3842412742.png" class="img-fluid"></p>
@@ -166,8 +184,11 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Remark :</strong> The analysis is carried out using NetworkX library in python environment. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !</p>
 <p><strong>References :</strong></p>
 <p>Asher, L. et al.&nbsp;(2012) ‘Most older pedestrians are unable to cross the road in time: a cross-sectional study’, Age and Ageing, 41(5), pp.&nbsp;690–694. doi: 10.1093/ageing/afs076.</p>
+<p>Göransson, J. and Andersson, H. (2023) ‘Factors that make public transport systems attractive: a review of travel preferences and travel mode choices’, <em>European Transport Research Review</em>, 15(1), p.&nbsp;32. doi: 10.1186/s12544-023-00609-x.</p>
+<p>Newman, M. (2010) <em>Networks</em>. Oxford University Press. doi: 10.1093/acprof:oso/9780199206650.001.0001.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
