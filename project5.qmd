@@ -18,7 +18,7 @@ title: "Evaluating a proposed intersection upgrade locations in The City of CHar
 ## **Dataset**
 
 | Name                                             | Source                                                                                                                                   |
-|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | Crash locations                                  | <https://data.charlottenc.gov/datasets/charlotte::fatal-or-serious-injury-crashes/about>                                                 |
 | All proposed intersection improvement locations: | <https://data.charlottenc.gov/datasets/charlotte::safe-streets-for-all-grant-projects-1/explore?location=35.202947%2C-80.818650%2C10.55> |
 | Commuting block groups                           | <https://data.charlottenc.gov/datasets/b3b8d817abaa4128ac24229a86f98938/explore?location=34.860646%2C-80.327097%2C7.45>                  |
@@ -270,7 +270,7 @@ community_nb.lw <- community_nb %>%
 sum(community_nb.lw)
 ```
 
-This operation returns 555, which mean that each Commuting Block is linked to other Commuting Blocks and the strength of these connections is evenly distributed across the neighborhoods
+This operation returns 555, which means that each Commuting Block is linked to other Commuting Blocks and the strength of these connections is evenly distributed across the neighborhoods
 
 ```{r}
 #Make weight list for Global Moran's I

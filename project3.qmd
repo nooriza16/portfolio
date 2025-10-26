@@ -2,7 +2,18 @@
 title: "Investigating London’s Underground Resilience (AM Peak Hour 07.00-10.00)"
 ---
 
-This study aims to investigate the resilience of London's underground system both as an infrastructural network and as a functional mode of transportation using a simplified network. It examines critical stations using various centrality measures, disruption scenarios, and their impact on passengers.
+Have you ever experienced using public transport, it does not operate the way you thought it would? You check upon your maps and voila diversion. Either you have to wait, which is unlikely, or change into other transports choice. What if those scenario happened in the most important node of transport, in a peak hour?
+
+To make the impacts less destructive, we build a mitigation scenario, therefeore when there is a disruption in the most important station in the most critical hours we could provide alternatives for passengers without overwhelming the rest of the network. So how do we do this?
+
+## **Dataset**
+
+1.  London Tube Netwowk (Simplified into a single line)
+2.  Londons Passenger's flow
+
+## Analytics
+
+Before we jump into the scenario, we have first to ask ourselves a question what does the most important station mean? is it the most connected one? the longest line? or the most used for transit? In using NetworkX in python environment we can answer all of those 'importance' questions.
 
 **1) Which station is the most important?**
 
@@ -65,3 +76,7 @@ If access to Bank & Monument from Waterloo station is unavailable, Embankment st
 **References :**
 
 Asher, L. et al. (2012) ‘Most older pedestrians are unable to cross the road in time: a cross-sectional study’, Age and Ageing, 41(5), pp. 690–694. doi: 10.1093/ageing/afs076.
+
+Göransson, J. and Andersson, H. (2023) ‘Factors that make public transport systems attractive: a review of travel preferences and travel mode choices’, *European Transport Research Review*, 15(1), p. 32. doi: 10.1186/s12544-023-00609-x.
+
+Newman, M. (2010) *Networks*. Oxford University Press. doi: 10.1093/acprof:oso/9780199206650.001.0001.
