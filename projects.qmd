@@ -7,5 +7,5 @@ listing:
   grid-columns: 4            # 5 projects per row
   image-height: 180px        # Image size
   fields: [image, categories, title, description, date]  # Show these details
-  page-size: 10              # Show up to 20 projects
+  page-size: 20              # Show up to 20 projects
 ---
