@@ -1,10 +1,14 @@
 ---
-title: "Identify the most promising locations between 2 potential store investments"
+title: "Supermarket Location Selection"
+date: 2025-02-10
+description: "Applied a spatial interaction model using human population data to determine the optimal location for a new supermarket"
+image: images/project4-thumbnail.jpg
+categories: [Location Intelligence]
 ---
 
-## Prompt :
+## Prompt
 
-Create an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.
+Build an analysis to estimate the potential customer for supermarkets in the Borough of Havering under a scenario of increased transport costs and to identify the most promising locations between 2 potential store investments, supermarket E00011326 and E00011710.
 
 ------------------------------------------------------------------------
 
@@ -52,7 +56,7 @@ Assuming an average walking speed of 1.2 m/s and that each building within a 15-
 
 **Fig 4.3** 15-minutes catchment area of the chosen supermarket
 
-**Remark :** The analysis is using python environment. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !
+**Remark :** The analysis is using python environment during my time taking Urban Simulation course led by Prof Elsa Arcaute in CASA UCL. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !
 
 **References**
 

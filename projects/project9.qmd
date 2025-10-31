@@ -1,5 +1,9 @@
 ---
 title: "Composing & Handling Field Survey Activities Using ArcMap"
+date: 2025-02-10
+description: "A summary on my experience managing a project that involved survey activities, including data preparation, integration, and field team coordination"
+image: images/valerie-v-8CACa5kjqMM-unsplash.jpg
+categories: [Field Survey]
 ---
 
 Within this job, my duty is to provide a technical consultancy to assist door-to-door data collection by designing a land-parcel map for densely populated area using ArcMAP, with the goals to :

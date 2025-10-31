@@ -1,10 +1,14 @@
 ---
-title: "Investigating London’s Underground Resilience (AM Peak Hour 07.00-10.00)"
+title: "London's Tube Resilience"
+date: 2025-02-10
+description: "Scenario on investigating London Underground Resilience during morning peak hours 07.00-10.00 AM"
+image: images/project3-thumbnail.jpg
+categories: [Data Science]
 ---
 
-Have you ever experienced using public transport, it does not operate the way you thought it would? You check upon your maps and voila diversion. Either you have to wait, which is unlikely, or change into other transports choice. What if those scenario happened in the most important node of transport, in a peak hour?
+Have you ever experienced using public transport, it does not operate the way you thought it would? You check upon your maps and voila diversion. Either you have to wait, which is unlikely on some cases, or change into other transports choice. What if those scenario happened in the most important node of transport, or so in a peak hour?
 
-To make the impacts less destructive, we build a mitigation scenario, therefeore when there is a disruption in the most important station in the most critical hours we could provide alternatives for passengers without overwhelming the rest of the network. So how do we do this?
+To make the impacts less disruptive, I build a mitigation scenario to first identify which stations are most important in the network, therefeore when there is a disruption them in the most critical hours we could provide alternatives for passengers without overwhelming the rest of the network. So how do we do this?
 
 ## **Dataset**
 
@@ -71,7 +75,7 @@ If access to Bank & Monument from Waterloo station is unavailable, Embankment st
 
 ![](images/clipboard-1046128409.png){width="557"}
 
-**Remark :** The analysis is carried out using NetworkX library in python environment. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !
+**Remark :** The analysis is carried out using NetworkX library in python environment, learned during urban simulation course in CASA UCL. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !
 
 **References :**
 

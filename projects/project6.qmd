@@ -1,5 +1,9 @@
 ---
-title: "Mapping the distribution of Threatened Group Animals impacted by Forest Loss"
+title: "Biodiversity Mapping"
+date: 2025-02-10
+description: "This article presents my CASA UCL dissertation, which uses Google Earth Engine and open-source data to support Indonesia’s commitment to reversing biodiversity loss under the Kunming Biodiversity Convention by 2030"
+image: images/project6-thumbnail.jpg
+categories: [Google Earth Engine]
 ---
 
 ## Context

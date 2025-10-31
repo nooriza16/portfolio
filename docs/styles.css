@@ -1,1 +1,70 @@
-/* css styles */
+/* === Listing card customization === */
+
+/* Card layout and hover lift */
+.quarto-grid .card {
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.quarto-grid .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 1️⃣ Categories (Type) */
+.quarto-grid .listing-categories {
+  color: #1e7f36;         /* green */
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+/* 2️⃣ Title */
+.quarto-grid .listing-title,
+.quarto-grid .listing-title a {
+  font-weight: 800;
+  font-size: 1.1em;
+  color: #222 !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+/* Hover effect: color shift + subtle lift + underline animation */
+.quarto-grid .listing-title:hover,
+.quarto-grid .listing-title a:hover {
+  color: #28a745 !important;      /* brighter green */
+  transform: translateY(-2px);    /* slight upward movement */
+  box-shadow: 0 2px 0 #28a745;    /* thin underline glow */
+}
+
+
+.quarto-grid .listing-title:hover,
+.quarto-grid .listing-title a:hover {
+  color: #28a745 !important; /* lighter green on hover */
+}
+
+/* 3️⃣ Description */
+.quarto-grid .listing-description {
+  color: #555;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-bottom: 0.4em;
+}
+
+/* 4️⃣ Date */
+.quarto-grid .listing-date {
+  color: #888;
+  font-size: 0.8em;
+}
+
+/* Optional: center image and style spacing */
+.quarto-grid .listing-image img {
+  border-radius: 8px;
+  object-fit: cover;
+}

@@ -1,5 +1,9 @@
 ---
-title: "Building A Basic Geospatial Database with ArcGIS Pro & ArcGIS Enterprise"
+title: "Basic Geodatabase with ArcGIS Pro & ArcGIS Enterprise"
+date: 2025-02-10
+description: "Producing geospatial datasets—like road networks and land use using ArcGIS Pro and Enterprise for collaborative work"
+image: images/project-8.jpg
+categories: [GIS]
 ---
 
 ## Context

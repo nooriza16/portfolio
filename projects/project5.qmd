@@ -1,8 +1,12 @@
 ---
-title: "Evaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina "
+title: "Proposing road intersection upgrade"
+date: 2025-02-10
+description: "Evaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina using R Studio"
+image: images/project5-thumbnail.jpg
+categories: [Location intelligence]
 ---
 
-*This project is part of a GIS course assessment challenge using Rstudio, with scenario focused on helping the City of Charlotte decide where to upgrade intersections after receiving \$4.47 million to reduce pedestrian injuries and deaths.*
+*This project is part of a GIS course assessment challenge using Rstudio, with scenario focused on helping the City of Charlotte decide where to upgrade intersections after receiving \$4.47 million to reduce pedestrian injuries and deaths using R Studio.*
 
 ## Project Summary
 
@@ -18,7 +22,7 @@ title: "Evaluating a proposed intersection upgrade locations in The City of CHar
 ## **Dataset**
 
 | Name                                             | Source                                                                                                                                   |
-|--------------------|----------------------------------------------------|
+|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Crash locations                                  | <https://data.charlottenc.gov/datasets/charlotte::fatal-or-serious-injury-crashes/about>                                                 |
 | All proposed intersection improvement locations: | <https://data.charlottenc.gov/datasets/charlotte::safe-streets-for-all-grant-projects-1/explore?location=35.202947%2C-80.818650%2C10.55> |
 | Commuting block groups                           | <https://data.charlottenc.gov/datasets/b3b8d817abaa4128ac24229a86f98938/explore?location=34.860646%2C-80.327097%2C7.45>                  |
@@ -343,13 +347,13 @@ To add more details name, add this to above script
 
 **Interpretation of Local Moran's I result** :
 
-1.  The distinctive areas that shares similar high values located in the Uptown Areas \[Object Id 4003 and 4397\], in North East areas around Commuting Block 5 in Census Track 55.24, Mecklenburg County \[Object id 3928,4215\]. Honestly, this results are hard to interpret.
-2.  In terms of finer scale, Census Commuting Block Group does helps to identify a detailed areas, but pinpointing the name of the area is much easier when using the Census tract. However in this analysis, I will interpret the Local Moran's Result with the help of OSM Basemap. So the high density that shares similar values are:
+1.  The distinctive areas that shares similar high values located in the Uptown Areas \[Object Id 4003 and 4397\], in North East areas around Commuting Block 5 in Census Track 55.24, Mecklenburg County \[Object id 3928,4215\]. Honestly, these results are hard to interpret, which will be addressed in the upcoming section.
+2.  In terms of finer scale, Census Commuting Block Group does helps identifying more detailed areas, however pinpointing the location name is much easier using the Census tract as they are more generalized. In this analysis, I propse the interpretation of Local Moran's Result using OSM Basemap to identify what kind of location are identified in the result. Based on the Local Moran's result, high density that shares similar values are:
     -   The uptown areas/city centre
 
-    -   South East direction from city centre in Evergreen Nature Preserve, which potentially a lot of pedestrian to visit the Park
+    -   South East direction from city centre in Evergreen Nature Preserve (Park) , which potentially attract a lot of pedestrian to visit and from the Park
 
-    -   North East direction from city centre in James Martin Middle School, Governor's Village Academy, and Julis Chambers High School, which potentially a lot of students commuting from and go to school
+    -   North East direction from city centre in James Martin Middle School, Governor's Village Academy, and Julis Chambers High School, which potentially attract a lot of students commuting from and go to school
 
 ### Overlaying with Upgrade Points From the Government
 

@@ -1,6 +1,12 @@
 ---
-title: "Healthcare Accessibility with ArcGIS Network Analysis"
+title: "Healthcare Service Area"
+date: 2025-02-10
+description: "An interactive dashboard for real-time analytics."
+image: images/network.jpg
+categories: [Location Intelligence ArcGIS]
 ---
+
+## A study on how to measure the importance of London's underground network under various scenarios of vulnerabilities using networkX in python
 
 ![](images/clipboard-2458640453.png){width="346"}
 

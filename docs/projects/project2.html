@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-02-10">
+<meta name="description" content="An interactive dashboard for modelling rescue in rip current incidents using Agent Based Modelling">
 
-<title>Portfolio - Projects</title>
+<title>Portfolio - Rip Current Rescue Model</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -72,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Portfolio</span>
     </a>
   </div>
@@ -83,11 +85,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project.html" rel="" target="">
+    <a class="nav-link" href="../projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -102,21 +104,46 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a></li>
+  <li><a href="#entities-and-state-variables" id="toc-entities-and-state-variables" class="nav-link" data-scroll-target="#entities-and-state-variables">Entities and State Variables</a></li>
+  <li><a href="#modelled-patches" id="toc-modelled-patches" class="nav-link" data-scroll-target="#modelled-patches">Modelled Patches</a></li>
+  <li><a href="#process-overview-and-scheduling" id="toc-process-overview-and-scheduling" class="nav-link" data-scroll-target="#process-overview-and-scheduling">Process overview and scheduling</a></li>
+  <li><a href="#modelling-result" id="toc-modelling-result" class="nav-link" data-scroll-target="#modelling-result">Modelling Result</a></li>
+  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">Demo Video</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<h1 class="title">Rip Current Rescue Model</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Modelling</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    An interactive dashboard for modelling rescue in rip current incidents using Agent Based Modelling
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 10, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -124,53 +151,48 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<table class="table">
-<tbody>
-<tr class="odd">
-<td><img src="images/project6-thumbnail.jpg" class="img-fluid" width="800"></td>
-<td><p><a href="./project6.html"><strong>Mapping the distribution of Threatened Group Animals impacted by Forest Loss</strong></a></p>
-<p><em>This article presents my CASA UCL dissertation, which uses Google Earth Engine and open-source data to support Indonesia’s commitment to reversing biodiversity loss under the Kunming Biodiversity Convention by 2030</em></p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><img src="images/Screenshot 2025-10-17 142347.jpg" class="img-fluid" width="800"></td>
-<td><p><a href="./project8.html"><strong>Building A Basic Geospatial Database with ArcGIS Pro &amp; ArcGIS Enterprise</strong></a></p>
-<p>This article summarizes my experience creating core geospatial datasets—like road networks and land use—for Jakarta during my technical consultancy</p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><img src="images/valerie-v-8CACa5kjqMM-unsplash.jpg" class="img-fluid" width="800"></td>
-<td><p><a href="./project9.html"><strong>Composing &amp; Handling Field Survey Activities Using ArcMap</strong></a></p>
-<p>This article shares my experience managing a project that involved survey activities, including data preparation, integration, and field team coordination.</p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><img src="images/project1-thumbnail.jpg" class="img-fluid" width="801"></td>
-<td><p><a href="./project1.html"><strong>Predicting Pre-Teen Obesity Prevalence in London using Early Life Stressors</strong></a></p>
-<p><em>Can childhood adversity predict obesity? This study compares classical regression, random forest, and XGBoost to uncover links between early life hardship and obesity prevalence</em></p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><img src="images/project2-thumbnail.jpg" class="img-fluid" width="800"></td>
-<td><p><a href="./project2.html"><strong>Modelling Rip-Current Rescue using Agent-Based Modelling</strong></a></p>
-<p><em>Inspired by a rip current tragedy in my hometown, this model visualizes maritime rescue related to rip current incidents from the ground up, using Netlogo.</em></p></td>
-</tr>
-</tbody>
-</table>
+<p>As a planner, the part of our job is to model a city……which is utterly complex! and then we want to make the ‘computer’ do exactly what we want. How could we build a complex model when we could not even model a simple entity? this is one of main reason draws me to Agent Based Modelling (ABM). ABM teaches me to build a model from scratch, it could turn my abstract or wildest idea into a digital model. Like we could build a game from scratch, that’s fun! As part of the challenge in the assessment during my time in CASA, I create a model inspired by beach hazard incidents in my hometwon in early 2024, caused by a rip current. Here we go……..</p>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<p>Rip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?</p>
+<p>To ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).</p>
+<p><img src="images/clipboard-1896609057.png" class="img-fluid" width="396"></p>
+<p><strong>Fig 2.1</strong> Rip Current Anatomy. Source : <a href="https://manoa.hawaii.edu/exploringourfluidearth/physical/coastal-interactions/wave-coast-interactions">University of Hawai’i</a></p>
+</section>
+<section id="entities-and-state-variables" class="level2">
+<h2 class="anchored" data-anchor-id="entities-and-state-variables">Entities and State Variables</h2>
+<p><img src="images/clipboard-2599180595.png" class="img-fluid" width="387"></p>
+<p>Global variables track drowned, lost, and rescued bathers while initial bathers and rescue time can be modified. Meanwhile, the model spans 66 x 42 grids, each grid represents 20m x 20m. Each tick represents one minute, and the simulation will end after 180 minutes. The strength of rip currents differ depends on the beach topography however in this model we use the recorded current strength of 1 m/s (Yuan et al., 2023) thus bathers moving one patch away equals with 20 m away from the shoreline on each tick.</p>
+</section>
+<section id="modelled-patches" class="level2">
+<h2 class="anchored" data-anchor-id="modelled-patches">Modelled Patches</h2>
+<p><img src="images/clipboard-3913222032.png" class="img-fluid" width="452"></p>
+<p><strong>Fig 2.2</strong> Modelled Patches, each number represent the strength current</p>
+<p><img src="images/clipboard-3368747096.png" class="img-fluid" width="455"></p>
+<p><strong>Fig 2.3</strong> Netlogo interface result</p>
+</section>
+<section id="process-overview-and-scheduling" class="level2">
+<h2 class="anchored" data-anchor-id="process-overview-and-scheduling">Process overview and scheduling</h2>
+<p>The intuition of the process repeated upon every tick are the bathers will be dragged away from the shoreline with movement depends on the currents’ strength. The movement will cost bathers energy, thus energy will be updated every ticks with detail as follows:</p>
+<ul>
+<li><p>neck area, each patches cost 4 to 7 energy</p></li>
+<li><p>head, each patches costs 4 to 5 energy</p></li>
+<li><p>In non-rip currents area near the shoreline, each patch will cost 2 energy</p></li>
+<li><p>In non-rip currents area away from the shoreline cost 3 energy</p></li>
+</ul>
+<p>After that, when the response time set, the ship will navigate its direction depending on target availability in radius of 5 patch either move randomly or to rescue. Upon sensing the target, the ship will move forward faster of 5 patch else it moves 2 patches. After that, when the ship is near enough (radius 3) with the bathers it will rescue, by turning the bathers into pink, and trigger rescued counter. At the same time, in other location bathers which energy depleted will trigger drown counter and bathers hit the right edge will trigger lost counter.</p>
+</section>
+<section id="modelling-result" class="level2">
+<h2 class="anchored" data-anchor-id="modelling-result">Modelling Result</h2>
+</section>
+<section id="demo-video" class="level2">
+<h2 class="anchored" data-anchor-id="demo-video">Demo Video</h2>
+<video width="640" height="360" controls="">
+<source src="videos/ABM.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
 
 
+</video></section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
