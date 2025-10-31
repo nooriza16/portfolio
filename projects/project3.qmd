@@ -1,7 +1,7 @@
 ---
 title: "London's Tube Resilience"
 date: 2025-02-10
-description: "Scenario on investigating London Underground Resilience during morning peak hours 07.00-10.00 AM"
+description: "Scenario investigating the resilience of the London Underground during morning peak hours (07:00–10:00 AM)"
 image: images/project3-thumbnail.jpg
 categories: [Data Science]
 ---

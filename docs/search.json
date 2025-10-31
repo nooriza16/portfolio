@@ -4,7 +4,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Obesity Prevalence Prediction\n\n\n\nMachine Learning\n\n\n\nThis study employed machine learning to predict obesity prevalence using early life stressors variables in pre-teen children\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRip Current Rescue Model\n\n\n\nModelling\n\n\n\nAn interactive dashboard for modelling rescue in rip current incidents using Agent Based Modelling\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLondon’s Tube Resilience\n\n\n\nData Science\n\n\n\nScenario on investigating London Underground Resilience during morning peak hours 07.00-10.00 AM\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupermarket Location Selection\n\n\n\nLocation Intelligence\n\n\n\nApplied a spatial interaction model using human population data to determine the optimal location for a new supermarket\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProposing road intersection upgrade\n\n\n\nLocation intelligence\n\n\n\nEvaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina using R Studio\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiodiversity Mapping\n\n\n\nGoogle Earth Engine\n\n\n\nThis article presents my CASA UCL dissertation, which uses Google Earth Engine and open-source data to support Indonesia’s commitment to reversing biodiversity loss under…\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Service Area\n\n\n\nLocation Intelligence\n\n\n\nAn interactive dashboard for real-time analytics.\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Geodatabase with ArcGIS Pro & ArcGIS Enterprise\n\n\n\nGIS\n\n\n\nProducing geospatial datasets—like road networks and land use using ArcGIS Pro and Enterprise for collaborative work\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComposing & Handling Field Survey Activities Using ArcMap\n\n\n\nGIS\n\n\n\nA summary on my experience managing a project that involved survey activities, including data preparation, integration, and field team coordination\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Obesity Prevalence Prediction\n\n\n\nMachine Learning\n\n\n\nThis study employed a machine learning model to predict obesity prevalence in pre-teen children using early life stressors variables\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRip-current Rescue Model\n\n\n\nModelling\n\n\n\nAn interactive dashboard for modelling a rescue in Rip-current related drowning and lost incidents using Agent Based Modelling\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLondon’s Tube Resilience\n\n\n\nData Science\n\n\n\nScenario investigating the resilience of the London Underground during morning peak hours (07:00–10:00 AM)\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupermarket Location Selection\n\n\n\nLocation Intelligence\n\n\n\nApplied a spatial interaction model using human population data to determine the optimal location for a new supermarket\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Road Intersection Upgrade\n\n\n\nLocation intelligence\n\n\n\nEvaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina using R Studio\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nForest Loss and Biodiversity Mapping\n\n\n\nGoogle Earth Engine\n\n\n\nThis article presents my CASA UCL dissertation, which uses Google Earth Engine and open-source data to support Indonesia’s commitment to reversing biodiversity loss under…\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Service Area\n\n\n\nLocation Intelligence\n\n\n\nA Network Analysis model to visualize travel time to healthcare facilities in Archipelagic Regions\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Geodatabase with ArcGIS Pro & ArcGIS Enterprise\n\n\n\nGIS\n\n\n\nProducing geospatial datasets—like road networks and land use using ArcGIS Pro and Enterprise for collaborative work\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nComposing & Handling Field Survey Activities Using ArcMap\n\n\n\nGIS\n\n\n\nA summary on my experience managing a project that involved survey activities, including data preparation, integration, and field team coordination\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/project8.html",
@@ -86,49 +86,49 @@
   {
     "objectID": "projects/project2.html",
     "href": "projects/project2.html",
-    "title": "Rip Current Rescue Model",
+    "title": "Rip-current Rescue Model",
     "section": "",
     "text": "As a planner, the part of our job is to model a city……which is utterly complex! and then we want to make the ‘computer’ do exactly what we want. How could we build a complex model when we could not even model a simple entity? this is one of main reason draws me to Agent Based Modelling (ABM). ABM teaches me to build a model from scratch, it could turn my abstract or wildest idea into a digital model. Like we could build a game from scratch, that’s fun! As part of the challenge in the assessment during my time in CASA, I create a model inspired by beach hazard incidents in my hometwon in early 2024, caused by a rip current. Here we go…….."
   },
   {
     "objectID": "projects/project2.html#context",
     "href": "projects/project2.html#context",
-    "title": "Rip Current Rescue Model",
+    "title": "Rip-current Rescue Model",
     "section": "Context",
     "text": "Context\nRip Current is often termed as a beach hazard which make a best swimmer struggle to swim against, as it causes panic and exhaustion lead to drowning (Brighton et al., 2013). The overall purpose of this model is to understand how different response times influence the rescue of bathers’ accident on a beach where rip currents exist. Specifically, we address this question : How is different response times influence the rescue of drowned and lost bathers on a beach with rip currents?\nTo ensure the model is realistic enough to portray rip currents, I use patterns in rip currents’ morphology and current strength. Rip currents is characterised by channels of strong currents (rip neck) flowing from the shore out to sea (rip head) before it weakens (MacMahan, Thornton and Reniers, 2006). The currents drag object away from the shoreline rapidly compared to its surrounding. Rescue operation in this situation is racing with time, as the time passed the survival rates dropped and searching area will bigger while water currents significantly influence bathers’ movement (Grewe and Griva, 2024).\n\nFig 2.1 Rip Current Anatomy. Source : University of Hawai’i"
   },
   {
     "objectID": "projects/project2.html#entities-and-state-variables",
     "href": "projects/project2.html#entities-and-state-variables",
-    "title": "Rip Current Rescue Model",
+    "title": "Rip-current Rescue Model",
     "section": "Entities and State Variables",
     "text": "Entities and State Variables\n\nGlobal variables track drowned, lost, and rescued bathers while initial bathers and rescue time can be modified. Meanwhile, the model spans 66 x 42 grids, each grid represents 20m x 20m. Each tick represents one minute, and the simulation will end after 180 minutes. The strength of rip currents differ depends on the beach topography however in this model we use the recorded current strength of 1 m/s (Yuan et al., 2023) thus bathers moving one patch away equals with 20 m away from the shoreline on each tick."
   },
   {
     "objectID": "projects/project2.html#modelled-patches",
     "href": "projects/project2.html#modelled-patches",
-    "title": "Rip Current Rescue Model",
+    "title": "Rip-current Rescue Model",
     "section": "Modelled Patches",
     "text": "Modelled Patches\n\nFig 2.2 Modelled Patches, each number represent the strength current\n\nFig 2.3 Netlogo interface result"
   },
   {
     "objectID": "projects/project2.html#process-overview-and-scheduling",
     "href": "projects/project2.html#process-overview-and-scheduling",
-    "title": "Rip Current Rescue Model",
+    "title": "Rip-current Rescue Model",
     "section": "Process overview and scheduling",
     "text": "Process overview and scheduling\nThe intuition of the process repeated upon every tick are the bathers will be dragged away from the shoreline with movement depends on the currents’ strength. The movement will cost bathers energy, thus energy will be updated every ticks with detail as follows:\n\nneck area, each patches cost 4 to 7 energy\nhead, each patches costs 4 to 5 energy\nIn non-rip currents area near the shoreline, each patch will cost 2 energy\nIn non-rip currents area away from the shoreline cost 3 energy\n\nAfter that, when the response time set, the ship will navigate its direction depending on target availability in radius of 5 patch either move randomly or to rescue. Upon sensing the target, the ship will move forward faster of 5 patch else it moves 2 patches. After that, when the ship is near enough (radius 3) with the bathers it will rescue, by turning the bathers into pink, and trigger rescued counter. At the same time, in other location bathers which energy depleted will trigger drown counter and bathers hit the right edge will trigger lost counter."
   },
   {
     "objectID": "projects/project2.html#modelling-result",
     "href": "projects/project2.html#modelling-result",
-    "title": "Rip Current Rescue Model",
+    "title": "Rip-current Rescue Model",
     "section": "Modelling Result",
     "text": "Modelling Result"
   },
   {
     "objectID": "projects/project2.html#demo-video",
     "href": "projects/project2.html#demo-video",
-    "title": "Rip Current Rescue Model",
+    "title": "Rip-current Rescue Model",
     "section": "Demo Video",
     "text": "Demo Video\n\n\nYour browser does not support the video tag."
   },

@@ -1,5 +1,5 @@
 ---
-title: "Proposing road intersection upgrade"
+title: "Evaluating Road Intersection Upgrade"
 date: 2025-02-10
 description: "Evaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina using R Studio"
 image: images/project5-thumbnail.jpg
@@ -22,7 +22,7 @@ categories: [Location intelligence]
 ## **Dataset**
 
 | Name                                             | Source                                                                                                                                   |
-|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | Crash locations                                  | <https://data.charlottenc.gov/datasets/charlotte::fatal-or-serious-injury-crashes/about>                                                 |
 | All proposed intersection improvement locations: | <https://data.charlottenc.gov/datasets/charlotte::safe-streets-for-all-grant-projects-1/explore?location=35.202947%2C-80.818650%2C10.55> |
 | Commuting block groups                           | <https://data.charlottenc.gov/datasets/b3b8d817abaa4128ac24229a86f98938/explore?location=34.860646%2C-80.327097%2C7.45>                  |

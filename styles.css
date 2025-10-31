@@ -1,68 +1,83 @@
 /* === Listing Card Customization === */
 
-
 /* 1️⃣ Card Container */
-.quarto-grid .card {
+.card {
   border-radius: 14px;
   border: 0.5px solid rgba(0,0,0,0.08);
   padding: 20px;
   min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Needed for date absolute positioning */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.quarto-grid .card:hover {
+.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-/* Ensure categories are visible and above title */
-.quarto-grid .listing-categories {
-  display: block !important;
-  color: #1e7f36;
-  font-weight: 700;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.3em;
-  margin-top: 0.4em;
+/* 2️⃣ Image */
+.listing-image {
+  order: 1;
+}
+.listing-image img {
+  border-radius: 10px;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 0.8em;
 }
 
-/* 3️⃣ Title (black, bold) */
-.quarto-grid .listing-title,
-.quarto-grid .listing-title a {
-  color: #111 !important;       /* ✅ black title */
-  font-weight: 950 !important;  /* bold */
+/* 3️⃣ Categories — plain blue text, under image */
+/* 3️⃣ Categories — green text under image */
+.listing-categories,
+.listing-categories a {
+  order: 2;
+  display: inline-block !important;
+  color: #1e7f36 !important;    /* ✅ green */
+  font-weight: 700;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  text-decoration: none !important;
+}
+
+
+/* 4️⃣ Title (black, bold) */
+.listing-title,
+.listing-title a {
+  order: 3;
+  color: #111 !important;
+  font-weight: 950 !important;
   font-size: 1.2em;
   text-decoration: none;
   margin-bottom: 0.4em;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover effect for title */
-.quarto-grid .listing-title:hover,
-.quarto-grid .listing-title a:hover {
+.listing-title:hover,
+.listing-title a:hover {
   color: #28a745 !important;   /* subtle green hover */
   transform: translateY(-2px);
 }
 
-/* 4️⃣ Description */
-.quarto-grid .listing-description {
+/* 5️⃣ Description */
+.listing-description {
+  order: 4;
   color: #444;
   font-size: 0.9em;
   line-height: 1.5;
   margin-bottom: 0.6em;
 }
 
-/* 5️⃣ Date */
-.quarto-grid .listing-date {
+/* 6️⃣ Date — anchored bottom-right */
+.listing-date {
   color: #888;
   font-size: 0.8em;
-}
-
-/* 6️⃣ Image */
-.quarto-grid .listing-image img {
-  border-radius: 10px;
-  height: 220px;
-  object-fit: cover;
-  margin-bottom: 0.8em;
+  position: absolute;
+  bottom: 16px;
+  right: 20px;   /* ✅ moves it to bottom-right */
+  text-align: right;
 }

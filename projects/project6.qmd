@@ -1,5 +1,5 @@
 ---
-title: "Biodiversity Mapping"
+title: "Forest Loss and Biodiversity Mapping"
 date: 2025-02-10
 description: "This article presents my CASA UCL dissertation, which uses Google Earth Engine and open-source data to support Indonesia’s commitment to reversing biodiversity loss under the Kunming Biodiversity Convention by 2030"
 image: images/project6-thumbnail.jpg

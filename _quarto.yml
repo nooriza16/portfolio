@@ -15,13 +15,15 @@ website:
 
 format:
   html:
-    theme : default
-    css: styles.css          
+    theme:
+      - default   # 🟢 Theme name on its own line
+    css: styles.css  # 🟢 Your custom stylesheet AFTER the theme
     toc: true
-    include-after-body:       
+    include-after-body:
       - text: |
           <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 jupyter: python3
 editor: visual

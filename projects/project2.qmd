@@ -1,7 +1,7 @@
 ---
-title: "Rip Current Rescue Model"
+title: "Rip-current Rescue Model"
 date: 2025-02-10
-description: "An interactive dashboard for modelling rescue in rip current incidents using Agent Based Modelling"
+description: "An interactive dashboard for modelling a rescue in Rip-current related drowning and lost incidents using Agent Based Modelling"
 image: images/project2-thumbnail.jpg
 categories: [Modelling]
 ---
