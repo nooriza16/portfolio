@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-02-10">
-<meta name="description" content="A summary on my experience managing a project that involved survey activities, including data preparation, integration, and field team coordination">
+<meta name="description" content="Scenario on investigating London Underground Resilience during morning peak hours 07.00-10.00 AM">
 
-<title>Portfolio - Composing &amp; Handling Field Survey Activities Using ArcMap</title>
+<title>Portfolio - London’s Tube Resilience</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,22 +104,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link active" data-scroll-target="#dataset"><strong>Dataset</strong></a></li>
+  <li><a href="#analytics" id="toc-analytics" class="nav-link" data-scroll-target="#analytics">Analytics</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Composing &amp; Handling Field Survey Activities Using ArcMap</h1>
+<h1 class="title">London’s Tube Resilience</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">GIS</div>
+    <div class="quarto-category">Data Science</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A summary on my experience managing a project that involved survey activities, including data preparation, integration, and field team coordination
+    Scenario on investigating London Underground Resilience during morning peak hours 07.00-10.00 AM
   </div>
 </div>
 
@@ -140,10 +147,64 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Within this job, my duty is to provide a technical consultancy to assist door-to-door data collection by designing a land-parcel map for densely populated area using ArcMAP, with the goals to :</p>
-<p><img src="images/avenza.jpg" class="img-fluid"></p>
+<p>Have you ever experienced using public transport, it does not operate the way you thought it would? You check upon your maps and voila diversion. Either you have to wait, which is unlikely on some cases, or change into other transports choice. What if those scenario happened in the most important node of transport, or so in a peak hour?</p>
+<p>To make the impacts less disruptive, I build a mitigation scenario to first identify which stations are most important in the network, therefeore when there is a disruption them in the most critical hours we could provide alternatives for passengers without overwhelming the rest of the network. So how do we do this?</p>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset"><strong>Dataset</strong></h2>
+<ol type="1">
+<li>London Tube Netwowk (Simplified into a single line)</li>
+<li>Londons Passenger’s flow</li>
+</ol>
+</section>
+<section id="analytics" class="level2">
+<h2 class="anchored" data-anchor-id="analytics">Analytics</h2>
+<p>Before we jump into the scenario, we have first to ask ourselves a question what does the most important station mean? is it the most connected one? the longest line? or the most used for transit? In using NetworkX in python environment we can answer all of those ‘importance’ questions.</p>
+<p><strong>1) Which station is the most important?</strong></p>
+<p>Well, there are several importance measure can be used here.. To identify important stations based on how many connections a station has we use <em>degree centrality</em>. Turns out Stratford has the most connections ! Well, UCL East is well located then :)</p>
+<p><img src="images/clipboard-3842412742.png" class="img-fluid"></p>
+<p><strong>Fig 3.1</strong> Stations importance based on Degree Centrality</p>
+<p>To identify the importance of stations by considering its average distance to all other stations, we use <em>closeness centrality</em>. The distance assumed in this study is based on hops between stations (not physical distance), as passengers usually perceive ‘farness’ by the number of stations passed, which is generally more convenient than changing platforms for shorter physical distances (Göransson and Andersson, 2023).</p>
+<p><img src="images/clipboard-3898950537.png" class="img-fluid"></p>
+<p><strong>Fig 3.2</strong> Stations importance based on Closeness Centrality</p>
+<p>Green Park, Bank and Museum, and King’s Cross St.&nbsp;Pancras are the top 3 crucial stations based on closeness centrality, indicating that they are best facilitating efficient movement across network. Meanwhile, to identify the importance of node by counting how frequently it lies on the shortest paths between other stations we use <em>betweenness</em> centrality.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3879360423.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><strong>Fig 3.3</strong> Stations importance based on Betweenness Centrality</figcaption>
+</figure>
+</div>
+<p>The most crucial stations based on betweenness centrality are Stratford, Bank, and Monument, with Liverpool Street following closely. This highlights their importance as transit hubs. Despite its low degree centrality, Liverpool Street has high betweenness centrality. Newman (2010) described this situation as a low-degree node with high betweenness, acting as a bridge between two network clusters, making Liverpool Street as a hub to and from East London.</p>
+<p><strong>2) Which station if being disrupted could impact the network’s cohesion?</strong></p>
+<p>The scenario is conducted by sequentially remove the highest centrality, then recalculate its value and remove the highest again until 10 nodes are removed. In scenario where such happened consecutively in the highest betweenness and degree centrality station, the underground network will become easily fragmented. This indicates that station with high degree and betweenness centrality is important for network cohesion. Additionally, as it is easily disconnecting network into 3 at the earliest removal time, it suggests that it immediately impacts many passengers both arriving at or departing from the disrupted station in 3 different location.</p>
+<p><img src="images/clipboard-2405650671.png" class="img-fluid"></p>
+<p><strong>Fig 3.4</strong> Number of connected networks (connected tube line) after station removal</p>
+<p>On the other hand, the most damaging removal occurs with 10 constant removal to nodes with high betweenness centrality, as evidenced by a sharp decline in the largest connected component (LCC = 170) compared to degree and closeness centrality, with LCC 341 and 194 respectively (Figure 5). This suggests that nodes with the highest betweenness centrality are vital for maintaining global connectivity, as their disruption prevents all stations from being reachable from one another.</p>
+<p><img src="images/clipboard-3849582078.png" class="img-fluid"></p>
+<p><strong>Fig 3.5</strong> Comparison of largest connected tube line after station removal</p>
+<p>So far, we only calculated the network importance without considering the passenger flow. In reality, the importance of London’s underground also related to how many people come in and out from and to a station. When flows are considered, degree and closeness centrality remains unchanged as it measures node proximity, unaffected by flow quantity.</p>
+<p><strong>Top 10 flow weighted closeness centrality</strong></p>
+<p><img src="images/clipboard-3679240530.png" class="img-fluid" width="439"></p>
+<p>With flow data, Green Park and Bank &amp; Monument emerge as the most critical stations. Green Park is a key interchange for the Jubilee, Piccadilly, and Victoria lines, and provides access to Heathrow Airport. Its central role makes it prone to overcrowding, as seen on its struggle during the Queen’s Funeral in 2022 (Elvery, 2022).</p>
+<p><strong>3) When flow considered, which station is being impacted the most by the closure scenario? and how many people are affected?</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-946465454.png" class="img-fluid figure-img" width="646"></p>
+<figcaption class="figure-caption"><img src="images/clipboard-3290414035.png" class="img-fluid figure-img" width="656"></figcaption>
+</figure>
+</div>
+<p><strong>Fig 3.6</strong> Top 5 of in and outflow of passengers</p>
+<p>The largest flows are found at journey from Waterloo Station to Bank &amp; Monument. If Waterloo station is closed, 67.372 people who use Waterloo as the origin to reach Bank &amp; Monument will be directly affected. Potentially there will be 1.475.019 people have to change their route as they planned to terminate at Waterloo.</p>
+<p><strong>4) Let’s say, Waterloo station is closed which nearest station people should go to?</strong></p>
+<p>If access to Bank &amp; Monument from Waterloo station is unavailable, Embankment station serves as an alternative to go to Bank &amp; Monument directly with assumption passengers continue their journey with tube. The journey takes approximately 15 minutes, assuming a UK walking speed of 1.2 seconds per meter (Asher et al., 2012), with route as follows:</p>
+<p><img src="images/clipboard-1046128409.png" class="img-fluid" width="557"></p>
+<p><strong>Remark :</strong> The analysis is carried out using NetworkX library in python environment, learned during urban simulation course in CASA UCL. The GitHub repository is available upon requested (or I will update the script here later), feel free to email me !</p>
+<p><strong>References :</strong></p>
+<p>Asher, L. et al.&nbsp;(2012) ‘Most older pedestrians are unable to cross the road in time: a cross-sectional study’, Age and Ageing, 41(5), pp.&nbsp;690–694. doi: 10.1093/ageing/afs076.</p>
+<p>Göransson, J. and Andersson, H. (2023) ‘Factors that make public transport systems attractive: a review of travel preferences and travel mode choices’, <em>European Transport Research Review</em>, 15(1), p.&nbsp;32. doi: 10.1186/s12544-023-00609-x.</p>
+<p>Newman, M. (2010) <em>Networks</em>. Oxford University Press. doi: 10.1093/acprof:oso/9780199206650.001.0001.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
