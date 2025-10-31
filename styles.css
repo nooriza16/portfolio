@@ -1,64 +1,68 @@
-/* === Listing card customization === */
+/* === Listing Card Customization === */
 
-/* Card layout and hover lift */
+
+/* 1️⃣ Card Container */
 .quarto-grid .card {
-  border-radius: 12px;
+  border-radius: 14px;
   border: 0.5px solid rgba(0,0,0,0.08);
-  padding: 12px;
+  padding: 20px;
+  min-height: 380px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .quarto-grid .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-/* 1️⃣ Categories (Type) */
+/* Ensure categories are visible and above title */
 .quarto-grid .listing-categories {
-  color: #1e7f36;         /* green */
-  font-weight: 600;
-  font-size: 0.65em;
+  display: block !important;
+  color: #1e7f36;
+  font-weight: 700;
+  font-size: 0.7em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-top: 0.5em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.3em;
+  margin-top: 0.4em;
 }
 
-/* 2️⃣ Title — bold, dark, and hoverable */
+/* 3️⃣ Title (black, bold) */
 .quarto-grid .listing-title,
 .quarto-grid .listing-title a {
-  font-weight: 800 !important;    /* ✅ force bold */
-  font-size: 1.1em;
-  color: #222 !important;
+  color: #111 !important;       /* ✅ black title */
+  font-weight: 950 !important;  /* bold */
+  font-size: 1.2em;
   text-decoration: none;
+  margin-bottom: 0.4em;
   transition: color 0.2s ease, transform 0.2s ease;
-  display: block;
-  margin-bottom: 0.3em;
 }
 
-/* Hover effect: green + subtle lift + underline glow */
+/* Hover effect for title */
 .quarto-grid .listing-title:hover,
 .quarto-grid .listing-title a:hover {
-  color: #28a745 !important;      /* brighter green on hover */
-  transform: translateY(-2px);    /* lift effect */
-  box-shadow: 0 2px 0 #28a745;    /* underline glow */
+  color: #28a745 !important;   /* subtle green hover */
+  transform: translateY(-2px);
 }
 
-/* 3️⃣ Description */
+/* 4️⃣ Description */
 .quarto-grid .listing-description {
-  color: #555;
-  font-size: 0.65em;
-  line-height: 1.4;
-  margin-bottom: 0.4em;
+  color: #444;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 0.6em;
 }
 
-/* 4️⃣ Date */
+/* 5️⃣ Date */
 .quarto-grid .listing-date {
   color: #888;
   font-size: 0.8em;
 }
 
-/* Optional: center image and style spacing */
+/* 6️⃣ Image */
 .quarto-grid .listing-image img {
-  border-radius: 8px;
+  border-radius: 10px;
+  height: 220px;
   object-fit: cover;
+  margin-bottom: 0.8em;
 }

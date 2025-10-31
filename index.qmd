@@ -4,11 +4,11 @@ title: "About Me"
 
 ![](/images/Picture1.jpg){width="392"}
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-| I’m Nooriza Maharani, a spatial data analyst with a Geography background and a Master’s degree from Centre for Advanced Spatial Analysis, The Bartlett, UCL. With 3+ years of experience as an individual consultant for Indonesian government agencies. |         |
-|                                                                                                                                                                                                                                                          |         |
-| My work and interest sits at the intersection of spatial science, data analytic, and urban planning. I’m especially interested in using spatial insights and explore how data can support decision-making.                                               |         |
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---+
+| I’m Nooriza Maharani, a spatial data analyst with a Geography background and a Master’s degree from Centre for Advanced Spatial Analysis, The Bartlett, UCL. With 3+ years of experience as an individual consultant for Indonesian government agencies. |   |
+|                                                                                                                                                                                                                                                          |   |
+| My work and interest sits at the intersection of spatial science, data analytic, and urban planning. I’m especially interested in using spatial insights and explore how data can support decision-making.                                               |   |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---+
 
 ### Connect with me
 

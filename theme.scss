@@ -1,0 +1,23 @@
+/* === Custom Quarto Theme Overrides === */
+
+/* 🎨 Colors */
+$body-bg: #fefefe;             /* Background color of your site */
+$body-color: #222;             /* Default text color */
+$link-color: #1e7f36;          /* Link color (green) */
+$input-bg: #ffffff;            /* Input backgrounds */
+$popover-bg: #f8f9fa;          /* Popover/citation preview background */
+
+/* ✍️ Fonts */
+$font-family-sans-serif: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-root: 1.05rem;      /* Slightly larger base font */
+$toc-font-size: 0.9rem;        /* Table of contents text size */
+
+/* 📏 Headings */
+$h1-font-size: 2.1rem;
+$h2-font-size: 1.7rem;
+$h3-font-size: 1.3rem;
+$h4-font-size: 1.1rem;
+$h5-font-size: 1rem;
+
+/* ✅ Then, import a base theme (e.g., default Bootstrap) */
+@import "bootstrap/scss/bootstrap";

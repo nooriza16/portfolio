@@ -4,7 +4,7 @@ listing:
   contents: projects         # Look inside the /projects folder
   sort: "date desc"          # Sort by newest first
   type: grid                 # Display in a responsive grid
-  grid-columns: 4            # 5 projects per row
+  grid-columns: 3            # 5 projects per row
   image-height: 180px        # Image size
   fields: [image, categories, title, description, date]  # Show these details
   page-size: 20              # Show up to 20 projects
