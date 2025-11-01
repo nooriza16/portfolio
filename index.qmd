@@ -4,10 +4,9 @@ toc : false
 format:
   html:
     page-layout: full
-    css: styles.css
 ---
 
-![](/images/Picture1.jpg){width="392"}
+![<a href="mailto:nooriza.maharani@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://github.com/nooriza16" target="_blank"><i class="fab fa-github"></i></a> <a href="https://linkedin.com/in/nooriza-maharani" target="_blank"><i class="fab fa-linkedin"></i></a>](/images/Picture1.jpg){width="392"}
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
 | My name is **Nooriza Maharani,** a spatial data analyst with 3+ years of experience as an individual consultant for government agencies.                                                                                             |        |
@@ -18,7 +17,3 @@ format:
 ### Education
 
 ![](images/edu.jpg){width="384"}
-
-### Connect with me
-
-<a href="mailto:nooriza.maharani@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://github.com/nooriza16" target="_blank"><i class="fab fa-github"></i></a> <a href="https://linkedin.com/in/nooriza-maharani" target="_blank"><i class="fab fa-linkedin"></i></a>
