@@ -15,10 +15,12 @@ website:
 
 format:
   html:
+    page-layout: full
     theme:
       - default   # 🟢 Theme name on its own line
     css: styles.css  # 🟢 Your custom stylesheet AFTER the theme
     toc: true
+    allow-html: true
     include-after-body:
       - text: |
           <link rel="stylesheet"
