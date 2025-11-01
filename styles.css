@@ -1,16 +1,33 @@
 
 
+/* 🌟 Add a parent container to handle layout */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;          /* allow wrapping to next row */
+  gap: 2em;               /* spacing between cards */
+  justify-content: flex-start; /* align left, not centered */
+  align-items: stretch;
+  margin: 2em 0;
+}
+
+/* ✨ Card adjustments */
 .card {
   display: flex;
   flex-direction: column;
-  gap: 0.5em; 
-  justify-content: flex-start; /* align everything top-down naturally */
+  gap: 0.5em;
+  justify-content: flex-start;
   position: relative;
   padding: 20px;
   min-height: 380px;
+
+  /* 🧩 KEY CHANGES BELOW */
+  flex: 1 1 500px;     /* allow cards to grow/shrink responsively */
+  max-width: 520px;    /* wider card */
+  box-sizing: border-box; /* prevent padding from breaking layout */
+
   border-radius: 14px;
   border: 0.5px solid rgba(0,0,0,0.08);
-  height: auto; /* allow card to grow with content */
+  height: auto;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -19,13 +36,14 @@
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
+
 /* 2️⃣ Image */
 .listing-image {
   /* keep order default */
 }
 .listing-image img {
-  border-radius: 10px;
-  height: 220px;
+  border-radius: 12px;
+  height: 260px;
   object-fit: cover;
   margin-bottom: 0.5em; /* tighten gap */
 }
@@ -37,14 +55,14 @@
   order : 2;
   background: none !important;   
   border: none !important;
-  color: #1e7f36 !important;       
+  color: #87CEFA !important;       
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.75em;
+  font-size: 0.6em;
   letter-spacing: 0.5px;
   padding: 0 !important;
-  margin-top: 0.6em;
-  margin-bottom: 0.2em;   /* small gap below category */
+  margin-top: 0.9em;
+  margin-bottom: 0.5em;   /* small gap below category */
   margin-right: 0.3em;
   text-decoration: none !important;
   /* removed order to let natural stacking happen */
@@ -64,7 +82,7 @@
 
 .listing-title:hover,
 .listing-title a:hover {
-  color: #28a745 !important;   
+  color: #4169E1 !important;   
   transform: translateY(-2px);
 }
 
@@ -79,6 +97,7 @@
 
 /* 6️⃣ Date — anchored bottom-right */
 .listing-date {
+  order :5;
   color: #888;
   font-size: 0.8em;
   position: absolute;
