@@ -8,12 +8,12 @@ format:
 
 ![<a href="mailto:nooriza.maharani@gmail.com"><i class="fas fa-envelope"></i></a> <a href="https://github.com/nooriza16" target="_blank"><i class="fab fa-github"></i></a> <a href="https://linkedin.com/in/nooriza-maharani" target="_blank"><i class="fab fa-linkedin"></i></a>](/images/Picture1.jpg){width="392"}
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
-| My name is **Nooriza Maharani,** a spatial data analyst with 3+ years of experience as an individual consultant for government agencies.                                                                                             |        |
-|                                                                                                                                                                                                                                      |        |
-| My work and interest sits at the intersection of spatial science, data analytic, and data driven decision-making. I’m especially interested in the process of finding pattern on messy data and turn them into actionable insights.  |        |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---+
+| My name is **Nooriza Maharani,** a spatial data analyst with 3+ years of experience as an individual consultant for government agencies.                                                                                            |   |
+|                                                                                                                                                                                                                                     |   |
+| My work and interest sits at the intersection of spatial science, data analytic, and data driven decision-making. I’m especially interested in the process of finding pattern on messy data and turn them into actionable insights. |   |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---+
 
-### Education
+## [Education]{style="color:#0C39CA;"}
 
-![](images/edu.jpg){width="384"}
+![](images/edu.jpg){width="338"}
