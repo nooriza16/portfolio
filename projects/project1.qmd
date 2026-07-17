@@ -6,11 +6,9 @@ description: This study employed a machine learning model to predict obesity pre
 categories: [Machine Learning]
 ---
 
-## Context
+## Problem Statement
 
-Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Alarmingly, one in five children is overweight or obese when they start school, and rising to one in three by the end of primary school (House of Commons, 2015). If current trends continue, Britain could become predominantly obese society by 2050 (Butland *et al*., 2027).
-
-Despite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo *et al*., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds *et al*., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by acomplex factors (Lingvay *et al*. (2024), looking at different angles might offer valuable insights.
+Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Despite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo *et al*., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds *et al*., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by a complex factors (Lingvay *et al*. (2024), looking at different angles might offer valuable insights.
 
 This work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors.
 
@@ -109,11 +107,7 @@ These findings suggests that obesity interventions may benefit from incorporatin
 
 Ahmad, Q. I., Ahmad, C. B. and Ahmad, S. M. (2010) ‘Childhood obesity’, Indian Journal of Endocrinology and Metabolism, 14(1), pp. 19–25. D’Argenio, A. et al. (2009) ‘Early trauma and adult obesity: Is psychological dysfunction the mediating mechanism?’, *Physiology & Behavior*, 98(5), pp. 543–546. doi: 10.1016/j.physbeh.2009.08.010.
 
-Butland, B. et al. (2027) Tackling obesities: future choices-project report. London: Department of Innovation, Universities and Skills.
-
 De Lorenzo, A. et al. (2020) ‘Obesity: A preventable, treatable, but relapsing disease’, Nutrition, 71, p. 110615. doi: 10.1016/j.nut.2019.110615
-
-House of Commons (2015) Childhood obesity— brave and bold action. First Report of Session 2015–16.
 
 Lingvay, I. et al. (2024) ‘Obesity in adults’, *The Lancet*, 404(10456), pp. 972–987. doi: 10.1016/S0140-6736(24)01210-8.
 
