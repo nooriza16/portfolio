@@ -162,9 +162,9 @@ tm_shape(crash_sj) +
   tm_polygons("density",
               style = "jenks",
               palette = "Reds",
-              title = "Eviction Density 2024",
-              alpha = 0.5) + #Making the layer transparent is a bad move in map visualization but I will do it here as I want to see the basemap
-  tm_shape(selected_crash1) + tm_dots(col = 'red') +
+              title = "Crash Density 2024",
+              alpha = 0.6) + #Making the layer transparent is a bad move in map visualization but I will do it here as I want to see the basemap
+  tm_shape(selected_crash1) + tm_dots(fill = 'red') +
   tm_basemap("OpenStreetMap")
 ```
 
@@ -338,7 +338,11 @@ tm_shape(crash_sj_moran)+
     palette = MoranColours, 
     midpoint = NA, 
     alpha = 0.5, #again I choose transparency to see the basemap to identify the land use
-    title = "Local Moran's I, 2019-2023 Pedestrian-related crash"
+    title = "Local Moran's I, 2019-2023 Pedestrian-related crash",
+    legend.format = list(
+      fun = function(x) formatC(x, digits = 2, format = "f", big.mark = ""),
+      text.separator = " to "
+    )
     ) + 
   tm_basemap("OpenStreetMap")
 ```
@@ -371,7 +375,7 @@ To add more details name, add this to above script
     title = "Local Moran's I, 2019-2023 Pedestrian-related crash"
     ) +
   tm_shape(upgrade_points) + 
-  tm_dots(col = "blue", size = 0.1)
+  tm_dots(fill = "blue", size = 0.6)
 ```
 
 From the map, we can see that if the Government wants to evaluate the intersection upgrade locations project, the upgrade should include the 3 areas identified by the Local Moran's I, which represent the CBD, Parks, and Schools, as these 3 locations have not been included in the upgrade plan. However, this result would be more appropriate if it were also verified using road sign distribution data (including sign data such as Accessible Pedestrian Signal (APS), Leading Pedestrian Interval (LPI), Rectangular Rapid Flashing Beacon (RRFB), etc.).
