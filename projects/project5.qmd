@@ -8,24 +8,24 @@ categories: [Location intelligence]
 
 *This project is part of a GIS course assessment challenge using Rstudio, with scenario focused on helping the City of Charlotte decide where to upgrade intersections after receiving \$4.47 million to reduce pedestrian injuries and deaths using R Studio.*
 
-## Project Summary
+# Project Summary
 
--   Pedestrians are considered as a vulnerable road user group
--   In The City of Charlotte, U.S. Department of Transportation federal grants program fund initiatives to prevent roadway deaths and serious injuries, by upgrading and installing equipment to reduce or eliminate pedestrian-involved crashes
--   Analysis is needed to evaluate 22 intersections around The City of Charlotte for upgrades as the project scheduled to receive additional funds in October. Thus, project reviews will be continued through the rest of the year
--   This project will only focus on the areas where the high pedestrian-related crash exists
--   Choosing point pattern analysis and spatial autocorrelation to summarise pattern in the crash locations data
--   Using DBSCAN in point pattern analysis will help to create cluster of points
--   Using spatial-autocorrelation (Global Moran & Local Moran's I) will help to measure how much the presence of one feature is related to the presence of similar features in nearby areas.
--   Overlaying the Moran's Result with proposed intersection upgrade locations
+- Pedestrians are considered a vulnerable road user group
+- In The City of Charlotte, U.S. Department of Transportation federal grant programs fund initiatives to prevent roadway deaths and serious injuries, by upgrading and installing equipment to reduce or eliminate pedestrian-involved crashes
+- Analysis is needed to evaluate 22 intersections around The City of Charlotte for upgrades, as the project is scheduled to receive additional funding in October. Thus, project reviews will continue through the rest of the year
+- This project will focus only on the areas where the high pedestrian-related crash exist
+- Point pattern analysis and spatial autocorrelation were chosen to summarise patterns in the crash location data.
+- Using DBSCAN in point pattern analysis will help to create cluster of points
+- Using spatial autocorrelation (Global Moran's I and Local Moran's I) will help measure how strongly the presence of one feature is related to the presence of similar features in nearby areas.
+- Overlaying the Moran's I results with proposed intersection upgrade locations
 
-## **Dataset**
+# **Dataset**
 
-| Name                                             | Source                                                                                                                                   |
-|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Crash locations                                  | <https://data.charlottenc.gov/datasets/charlotte::fatal-or-serious-injury-crashes/about>                                                 |
+| Name | Source |
+|--------------------|----------------------------------------------------|
+| Crash locations | <https://data.charlottenc.gov/datasets/charlotte::fatal-or-serious-injury-crashes/about> |
 | All proposed intersection improvement locations: | <https://data.charlottenc.gov/datasets/charlotte::safe-streets-for-all-grant-projects-1/explore?location=35.202947%2C-80.818650%2C10.55> |
-| Commuting block groups                           | <https://data.charlottenc.gov/datasets/b3b8d817abaa4128ac24229a86f98938/explore?location=34.860646%2C-80.327097%2C7.45>                  |
+| Commuting block groups | <https://data.charlottenc.gov/datasets/b3b8d817abaa4128ac24229a86f98938/explore?location=34.860646%2C-80.327097%2C7.45> |
 
 Context:
 
@@ -41,11 +41,13 @@ I use the pedestrian-related crashes from 2019-2023, with key columns such as: y
 
 All Datasets projected on NAD83 / North Carolina (ftUS) in US Feet
 
-## Question to Address
+# Question to Address
 
 1.  Do Pedestrian-related crashes exhibit a specific pattern across The City of Charlotte between 2019-2023?
 2.  Does Pedestrian-related crashes vary across The City of Charlotte between 2019-2023?
 3.  Are there any area that has not been covered by the intersection improvement upgrade plans?
+
+# Methodology
 
 ## Step 1: Pre-Processing the data
 
@@ -91,7 +93,7 @@ Admin <- st_read(here::here('Data',
 
 ```
 
--   **Filtering and Transforming Data**
+- **Filtering and Transforming Data**
 
 What I find through the data & will execute are:
 
@@ -99,7 +101,7 @@ What I find through the data & will execute are:
 
 2\. Filtering to pedestrian related crashes only
 
-3\. Make sure that coordinates is appropiate
+3\. Make sure that coordinates are in the correct system
 
 ```{r}
 #Select keycolumns in crash data
@@ -150,7 +152,7 @@ tm_shape(crash_sj) + tm_polygons("density",
                                     title = "Crash Density 2019-2023")
 ```
 
-Overall, the density map of pedestrian-related crash occurrences shows that the high occurrences of crashes, whether injury or fatal, are located in the center of the cities but not yield compact clustering rather it scattered outwards into windrose. Hence the map shows a unique pattern, as the 'dark red (high density)' follows a slight linear pattern. I suspect this pattern is related to spesific type of road networks, so I will overlay the data using OSM Basemap.
+Overall, the density map of pedestrian-related crash occurrences shows that high-density crashes, whether resulting in injury or fatality, are concentrated near the city centre, but do not form compact clustering; rather, they scatter outward in a windrose-like pattern. Hence, the map reveals a distinctive pattern, as the areas of "dark red" (high density) follow a slight linear trend. I suspect this pattern is related to a specific type of road network, so I will overlay the data with an OSM basemap.
 
 ```{r}
 #Overlaying with OSM
@@ -166,9 +168,9 @@ tm_shape(crash_sj) +
   tm_basemap("OpenStreetMap")
 ```
 
-By overlaying the pedestrian crash, density and basemap the high occurences often found on a Commuting Block near main road such as Central Avenue, North Sharon Amity Road, South Cedar Street etc. From the map can be seen that the Uptown or (city centre) is also the high occurences. The uptown is well known as a most urbanised neighbourhood and well known as a Central Bussiness District \[1\], so there would be many important services in here that attracts mobility.
+By overlaying the pedestrian crash density and the basemap, high occurrences are often found on Commuting Blocks near main roads such as Central Avenue, North Sharon Amity Road, and South Tryon Street, among others. From the map, it can also be seen that Uptown (the city centre) exhibits high occurrences. Uptown is well known as the most urbanised neighbourhood in the city and is recognised as the Central Business District \[1\], meaning it hosts many important services that attract mobility.
 
-Actually the analysis will be deeper if using the network dataset as it helps to identify what kind of road hierarchies the high density will occurs. Besides, adding land use data also will yield a richer analysis as it helps to identify dominant land use this density are mainly located. However it is outside the scope of this short project.
+The analysis would be deeper if a network dataset were used, as it would help identify the types of road hierarchies along which high-density areas occur. Additionally, incorporating land use data would yield a richer analysis, as it would help identify the dominant land use types where these high-density areas are mainly located. However, this is outside the scope of this short project.
 
 ## Step 3 : Analysis
 
@@ -176,7 +178,7 @@ Actually the analysis will be deeper if using the network dataset as it helps to
 
 The purpose is to discover clusters in space. Performing DBSCAN requires:
 
-a.  Epsilon
+a\. Epsilon
 
 Using Ripley's K to get an initial value for further choosing the good epsilon & validating the value using KNN Distribution plot to find a suitable eps value based on the ‘knee’
 
@@ -199,7 +201,7 @@ selected_crash1.ppp <- ppp(x=selected_crash1 @coords[,1],
                           window=window)
 ```
 
-#### Intuition to find Epsilon with Ripley's K
+### B. Intuition to find Epsilon with Ripley's K
 
 ```{r}
 #Plotting the RIpley's K graph
@@ -229,9 +231,9 @@ plot(selected_Admin$geometry, add=T)
 
 The KNN Distribution graph above validates that after calculcating average distance from every 3 points( K neighbours) in a distance around 2500 the largest spike of points sorted by distance happened, this is validating the previous knee value from Ripley's K: where the value (of distance to neighbours) increases.
 
-**Interpretations of point pattern analysis using DBSCAN:** The DBSCAN analysis identifies 5 distinct clusters, with a notable cluster covering the centre (red), northwest (blue), southeast (green), north (purple), northeast(blue). \*I hope the colour does not differ if run in another PC, but the direction will mitigate this if that happened.
+**Interpretations of point pattern analysis using DBSCAN:** The DBSCAN analysis identifies 5 distinct clusters, with a notable cluster covering the centre (red), northwest (blue), southeast (green), north (purple), northeast(blue). \*I hope the colour does not differ when implemented in another device, but the direction will mitigate this issue if that happened.
 
-### B. Spatial Autocorrelation : Moran's I
+### C. Spatial Autocorrelation : Moran's I
 
 **a. Performing Global Moran's I** The purpose is to measure similarity between nearby crashes points and provide a value to give a general sense of overall spatial autocorrelation
 
@@ -246,7 +248,7 @@ centroid_block <- crash_sj%>% #Use the result of spatial joined data with densit
 #plot(centroid_block,axes=TRUE)
 ```
 
-I create spatial weight matrix using the **queen** move in this analysis. Queen move suggests that each commuting block polygon is considered a neighbor if it shares either an edge or a corner with another commuting block polygons.
+I create a spatial weight matrix using the **queen** move in this analysis. Queen move suggests that each commuting block polygon is considered a neighbor if it shares either an edge or a corner with another commuting block polygons.
 
 ```{r}
 #Make neighbours
@@ -274,7 +276,7 @@ community_nb.lw <- community_nb %>%
 sum(community_nb.lw)
 ```
 
-This operation returns 555, which means that each Commuting Block is linked to other Commuting Blocks and the strength of these connections is evenly distributed across the neighborhoods
+The sum of 555 confirms that 555 Commuting Blocks each have at least one neighbor under the Queen contiguity rule (since each row sums to 1 after row-standardization).
 
 ```{r}
 #Make weight list for Global Moran's I
@@ -312,7 +314,7 @@ crash_sj_moran <- crash_sj %>%
   mutate(densityIz = as.numeric(I_localdensity$Z.Ii))
 ```
 
-### Step 4 : Visualization
+## Step 4 : Visualization
 
 ```{r}
 #set the breaks based on upper bound to ensure that all possible z-scores are included and standard deviation rule
@@ -323,7 +325,7 @@ library(RColorBrewer)
 MoranColours <- brewer.pal(8, "YlOrRd")
 ```
 
-#### **Mapping Interactive visualization**
+### **A. Mapping Interactive visualization**
 
 ```{r}
 tmap_mode("view")
@@ -347,15 +349,15 @@ To add more details name, add this to above script
 
 **Interpretation of Local Moran's I result** :
 
-1.  The distinctive areas that shares similar high values located in the Uptown Areas \[Object Id 4003 and 4397\], in North East areas around Commuting Block 5 in Census Track 55.24, Mecklenburg County \[Object id 3928,4215\]. Honestly, these results are hard to interpret, which will be addressed in the upcoming section.
-2.  In terms of finer scale, Census Commuting Block Group does helps identifying more detailed areas, however pinpointing the location name is much easier using the Census tract as they are more generalized. In this analysis, I propse the interpretation of Local Moran's Result using OSM Basemap to identify what kind of location are identified in the result. Based on the Local Moran's result, high density that shares similar values are:
-    -   The uptown areas/city centre
+1.  The distinctive areas that share similar high values are located in the Uptown area \[Object ID 4003 and 4397\] and in the northeast area around Commuting Block 5 in Census Tract 55.24, Mecklenburg County \[Object ID 3928, 4215\]. Honestly, these results are difficult to interpret, which will be addressed in the upcoming section.
+2.  In terms of finer-scale analysis, the Census Commuting Block Group does help identify more detailed areas; however, pinpointing location names is much easier using Census Tracts, as they are more generalized. In this analysis, I propose interpreting the Local Moran's I results using an OSM basemap to identify what kind of locations are captured in the results. Based on the Local Moran's I results, areas of high density with similar values include:
+    - The Uptown area/city centre
 
-    -   South East direction from city centre in Evergreen Nature Preserve (Park) , which potentially attract a lot of pedestrian to visit and from the Park
+    - The southeast direction from the city centre, in Evergreen Nature Preserve (a park), which likely attracts a large number of pedestrians travelling to and from the park
 
-    -   North East direction from city centre in James Martin Middle School, Governor's Village Academy, and Julis Chambers High School, which potentially attract a lot of students commuting from and go to school
+    - The northeast direction from the city centre, around James Martin Middle School, Governor's Village Academy, and Julius Chambers High School, which likely attracts a large number of students commuting to and from school
 
-### Overlaying with Upgrade Points From the Government
+### B. Overlaying with Upgrade Points From the Government
 
 ```{r}
  tm_shape(crash_sj_moran)+ 
@@ -372,21 +374,25 @@ To add more details name, add this to above script
   tm_dots(col = "blue", size = 0.1)
 ```
 
-From the map we can see If the Government want to evaluate the intersection upgrade locations project, then upgrade should includes the 3 areas from the Local's Moran I which represents the CBD, Parks, and Schools, as these 3 locations have not been included in the upgrade plan. However this result is more appropiate if the result is also verified using road sign distribution data (including sign data such as Accessible Pedestrian Signal (APS), Leading Pedestrian Interval (LPI), Rectangular Rapid Flashing Beacon (RRFB) etc)
+From the map, we can see that if the Government wants to evaluate the intersection upgrade locations project, the upgrade should include the 3 areas identified by the Local Moran's I, which represent the CBD, Parks, and Schools, as these 3 locations have not been included in the upgrade plan. However, this result would be more appropriate if it were also verified using road sign distribution data (including sign data such as Accessible Pedestrian Signal (APS), Leading Pedestrian Interval (LPI), Rectangular Rapid Flashing Beacon (RRFB), etc.).
 
-## Results
+# Results
 
-1.  The DBSCAN analysis identifies 5 distinct clusters between 2019-2023, with a notable cluster groups are in the centre, northwest, southeast, north, northeast from the city centre position.
+This study examined whether pedestrian-related crashes exhibit spatial patterns across the City of Charlotte between 2019 and 2023, and whether existing intersection upgrade plans adequately cover high-risk areas.
 
-2.  Pedestrian-related crashes show some variation across the City of Charlotte between 2019-2023. The Moran’s I value of 0.133 indicates weak positive spatial autocorrelation, meaning there is a slight tendency for crashes to cluster in certain areas rather than being randomly distributed. While this suggests some localized patterns, the low magnitude of the value implies that the clustering is not very strong.
+Regarding **RQ1**, the DBSCAN analysis confirms that pedestrian-related crashes do exhibit a specific spatial pattern, forming 5 distinct clusters concentrated in the centre, northwest, southeast, north, and northeast of the city.
 
-3.  The Local Moran I's result in the northeast and southeast part of The City of Charlotte aligned with the notion that the further someone gets away from the uptown area, the bigger the dangers for pedestrians \[2\]. Both of them located far away from the city centre.
+Regarding **RQ2**, crash distribution does vary across Charlotte, though the Moran's I value of 0.133 indicates this variation reflects only weak positive spatial autocorrelation; suggesting a mild tendency toward clustering rather than a strong, city-wide pattern. Notably, areas further from uptown (northeast and southeast) appear to face elevated pedestrian risk, consistent with prior findings \[2\].
 
-4.  There are still areas with the highest density of pedestrian-related crashes that have not been covered by the intersection improvement upgrade plans. All these locations are the results identified by Local Moran's I.
+Regarding **RQ3**, yes, several high-crash-density areas identified through Local Moran's I, including locations near the CBD, parks, and schools, have not been incorporated into current intersection improvement upgrade plans. This gap suggests the current plans may be underprioritizing areas with statistically significant crash clustering.
 
-The strength of this analysis lies in the use of spatial autocorrelation, which identifies specific areas requiring attention. Additionally, the use of an OSM basemap provides contextualization, offering insights into the actual activities occurring in areas with high-neighboring high crash density. I find that the appropriate layer for analyzing pedestrian-related crashes is network data \[road polygons\], which can calculate crash density based on road segments. While analysis using the total area of the commuting block group is helpful, it tends to generalize the entire block group.
+Overall, these findings suggest that intersection upgrade planning would benefit from incorporating spatial autocorrelation analysis alongside existing criteria, and should be further validated with road sign distribution and land use datasets to refine specific recommendations.
 
-The analysis could be more thorough with a dataset on current road sign availability, allowing for more specific recommendations on the types of intersection improvements needed, as well as a land use dataset to better explain potential driving factors based on land use types. Land Use identied in this analysis is based on the Open Street Map which year is not known.
+# Discussion
+
+The strength of this analysis lies in its use of spatial autocorrelation, which identifies specific areas requiring attention. Additionally, the use of an OSM basemap provides contextualization, offering insight into the actual activities occurring in areas with high neighboring crash density. I find that the most appropriate layer for analyzing pedestrian-related crashes is network data (road polygons), which allows crash density to be calculated based on road segments. While analysis using the total area of the commuting block group is helpful, it tends to generalize across the entire block group.
+
+The analysis could be made more thorough with a dataset on current road sign availability, allowing for more specific recommendations on the types of intersection improvements needed, as well as a land use dataset to better explain potential driving factors based on land use type. The land use data used in this analysis is based on OpenStreetMap, for which the reference year is unknown.
 
 **References:**
 

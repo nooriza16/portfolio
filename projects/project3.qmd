@@ -8,7 +8,7 @@ categories: [Data Science]
 
 ## Problem Statement
 
-Have you ever experienced using public transport but it does not operate the way you thought it would? You check upon your maps and......voila diversion. Either you have to wait, which is unlikely on some cases, or change into other transports choice. What if those scenario happened in the most important node of transport, or in a peak hour? In this post, I build a mitigation scenario when disruption hits the Tube network. The project build on by first identifying which stations are most important in the network. Secondly, we model the network cohesion by removing the 10 most important stations sequentially. Lastly, when the flow considered which station is being impacted the most by the closure scenario and what is the alternative without overwhelming the rest of the network.
+Have you ever used public transport, only to find it doesn't operate the way you expected? You check your maps app, and... voilà...a diversion. Either you have to wait, which isn't always guaranteed to help, or switch to another mode of transport. But what if that scenario happened at the most important node in the network, or during peak hour? In this post, I build a mitigation scenario for disruptions hitting the Tube network. The project begins by identifying which stations are most important in the network. Second, I model network cohesion by sequentially removing the 10 most important stations. Finally, I examine which stations are impacted the most by each closure scenario, and identify alternative routes that avoid overwhelming the rest of the network
 
 ## **Dataset**
 
@@ -17,7 +17,7 @@ Have you ever experienced using public transport but it does not operate the way
 
 ## Analytics
 
-Before we jump into the scenario, we have first propose a question: what is the definition of importance in this regard? is it the most connected one? the longest line? or the most used for transit? In NetworkX library we can answer all of those 'importance' questions. This analysis is a simplified model of TFL's network where there will be no distinction between lines and there will be no consideration of changes in the station.
+Before we dive into the scenario, we must first pose a question: what does "importance" mean in this context? Is it the most connected station? The one on the longest line? Or the one most used for transit? Using the NetworkX library, we can answer all of these "importance" questions. This analysis is a simplified model of TfL's network, in which there is no distinction between lines and no consideration of interchanges at stations.
 
 **1) Which station is the most important?**
 
