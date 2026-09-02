@@ -42,33 +42,33 @@ The results highlight differences in model performance and generalization: Linea
 
 As Linear Regression does not have hyperparameters to tune, hyperparameters tuning will be applied to RF and XGB. GridSearchCV with 5-fold cross-validation is used to optimize performance, aiming to reduce test RMSE and improve R² while maintaining simplicity and efficiency.
 
--   **Random Forest**
+- **Random Forest**
 
-    In RF, the model's previous overfitting result suggest that the tree might be too deep, thus max_depth is tested from shallow (3) to moderately deep (12), aiming to capture key patterns without fitting irrelevant details. The min_samples_split and min_samples_leaf is also tuned (up to 15) to prevent overly specific splits. Additionally, n_estimator is optimized, as more trees can improve performance.
+  In RF, the model's previous overfitting result suggest that the tree might be too deep, thus max_depth is tested from shallow (3) to moderately deep (12), aiming to capture key patterns without fitting irrelevant details. The min_samples_split and min_samples_leaf is also tuned (up to 15) to prevent overly specific splits. Additionally, n_estimator is optimized, as more trees can improve performance.
 
-    ![](images/clipboard-3923236352.png){width="451"}
+  ![](images/clipboard-3923236352.png){width="451"}
 
-    The model reduces overfitting, boosts R² on test data, and sets max_depth to 5 for better generalization. We will examine this hyperparameter individually using validation curve to identify the point at which increasing it leads to overfitting.
+  The model reduces overfitting, boosts R² on test data, and sets max_depth to 5 for better generalization. We will examine this hyperparameter individually using validation curve to identify the point at which increasing it leads to overfitting.
 
-    ![](images/clipboard-2667093654.png){width="426"}
+  ![](images/clipboard-2667093654.png){width="426"}
 
-    **Fig 1.2** Validation curve for Random Forest
+  **Fig 1.2** Validation curve for Random Forest
 
-    We can see that after max_depth = 5 on validation curve (red), model's performance on unseen data plateaus, indicating that beyond this point the model likely starting to overfit.
+  We can see that after max_depth = 5 on validation curve (red), model's performance on unseen data plateaus, indicating that beyond this point the model likely starting to overfit.
 
--   **XGBoost**
+- **XGBoost**
 
-    In XGBoost, to optimize model performance, we will vary max_depth to find an optimal depth. The learning_rate will be evaluate to achieve stable adjusted parameter after being iterated. We will also vary n_estimators , as the bigger the number the more stable the model performance. Additionally, reg_lambda will be tested to reduce overfitting by penalize large weights.
+  In XGBoost, to optimize model performance, we will vary max_depth to find an optimal depth. The learning_rate will be evaluate to achieve stable adjusted parameter after being iterated. We will also vary n_estimators , as the bigger the number the more stable the model performance. Additionally, reg_lambda will be tested to reduce overfitting by penalize large weights.
 
-    ![](images/clipboard-3866622984.png){width="539"}
+  ![](images/clipboard-3866622984.png){width="539"}
 
-    After tuning, R² increases, overfitting reduced significantly, and the model identifies a max_depth of 4 for good generalization. We will investigate this using a validation curve.
+  After tuning, R² increases, overfitting reduced significantly, and the model identifies a max_depth of 4 for good generalization. We will investigate this using a validation curve.
 
-    ![](images/clipboard-1865093969.png){width="442"}
+  ![](images/clipboard-1865093969.png){width="442"}
 
-    **Fig 1.3** Validation curve for XGBoost
+  **Fig 1.3** Validation curve for XGBoost
 
-    Despite its slightly fluctuative R² score, the pleateu starts to emerge from the max_depth = 4, suggesting that changing the hyperparameter within that range doesn’t significantly improve generalization performance and may increase the risk of overfitting.
+  Despite its slightly fluctuative R² score, the pleateu starts to emerge from the max_depth = 4, suggesting that changing the hyperparameter within that range doesn’t significantly improve generalization performance and may increase the risk of overfitting.
 
 3\) Comparison of Each Model
 
@@ -92,11 +92,11 @@ To address RQ2, we will compare feature contributions in the top models, Random 
 
 **Fig 1. 5** Importance Value in XGBoost
 
-The Random Forest and XGBoost models consistently highlight child poverty, lackof educational qualifications, and mental health index as key contributing factors topre-teen obesity prevalence, underscoring their universal importance. This alignswith Kimbro and Denney ( 2013) which linked obesity with higher poverty level andlow education.
+The Random Forest and XGBoost models consistently highlight child poverty, lack of educational qualifications, and mental health index as key contributing factors to pre-teen obesity prevalence, underscoring their universal importance. This aligns with Kimbro and Denney ( 2013) which linked obesity with higher poverty level and low education.
 
-The third-ranked mental health index further emphasizes the needfor integrating mental health to obesity interventions. The models diverge in their fourth and fifth rankings: RF places families with 3+children fourth and those working 49+ hours per week fifth, while XGB ranksworking 49+ hours fourth and lone parent unemployment fifth. RF highlightsresource strain in larger households and time strain potentially limiting healthymeal preparation or child supervision, while XGB points to struggles in single-parent households and overtime working (49+ hours exceeds the UK Working TimeDirective).
+The third-ranked mental health index further emphasizes the need for integrating mental health to obesity interventions. The models diverge in their fourth and fifth rankings: RF places families with 3+children fourth and those working 49+ hours per week fifth, while XGB ranks working 49+ hours fourth and lone parent unemployment fifth. RF highlights resource strain in larger households and time strain potentially limiting healthy meal preparation or child supervision, while XGB points to struggles in single-parent households and overtime working (49+ hours exceeds the UK Working Time Directive).
 
-These findings suggests that obesity interventions may benefit from incorporatingat-risk populations with childhood adversities, as well as evaluating supportschemes for work-life balance, unemployed single parents, and large households
+These findings suggests that obesity interventions may benefit from incorporating at-risk populations with childhood adversities, as well as evaluating support schemes for work-life balance, unemployed single parents, and large households
 
 ## Conclusion
 

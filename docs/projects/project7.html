@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#context" id="toc-context" class="nav-link active" data-scroll-target="#context">Context</a></li>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a></li>
+  <li><a href="#data-methodology" id="toc-data-methodology" class="nav-link" data-scroll-target="#data-methodology">Data &amp; Methodology</a></li>
   <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result">Result</a></li>
   </ul>
 </nav>
@@ -161,26 +161,41 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="images/clipboard-2458640453.png" class="img-fluid" width="346"></p>
-<p><strong>Fig 7.1</strong> Network Analyst Framework in ArcGIS source : <a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/networks/what-is-network-analyst-.htm">ESRI</a></p>
+<p>Fig 7.1 Network Analyst Framework in ArcGIS source : <a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/networks/what-is-network-analyst-.htm">ESRI</a></p>
 <section id="context" class="level2">
 <h2 class="anchored" data-anchor-id="context">Context</h2>
-<p>This project aims to visualize how people access healthcare services within a specific travel time. As a Geospatial Analyst, my team and I developed a framework to address data limitations, fine-tune the default settings of ArcGIS Network Analysis, and validate our modelling results in real-world settings.</p>
-<p>We used Network Analysis in ArcGIS to model the range of healthcare services accessible within selected time intervals. What makes this work unique is its application in an archipelagic region, where we assumed Euclidean distance as a proxy for ship routes. Using this model, we aim to identify regions that fall outside the “golden hour” of medical access—critical for informing policymakers in budget allocation and improving healthcare infrastructure.</p>
+<p>This project aims to visualize how people access healthcare services within a specific travel time. As geospatial analysts, our team developed a framework to address data limitations in sea-related travel, applied the ESRI Network Analysis extension, and validated our modeling results in real-world settings.</p>
+<p>This is an interesting project because Indonesia is an archipelagic region, yet ship network data is not yet available, making it hard for policymakers to picture accessibility conditions. With this result, decision-makers can easily identify regions with poor accessibility (more than a 1-hour journey) to hospitals and puskesmas (second-tier healthcare facilities), determine which regions need healthcare policy investment, and validate whether their chosen priority locations for healthcare improvement satisfy the required criteria.</p>
+<p>We used Network Analysis to model the range of healthcare services accessible within selected time intervals. What makes this work unique is its application in an archipelagic region, where we assumed Euclidean distance as a proxy for ship routes. Using this model, we aim to identify regions that fall outside the “golden hour” of medical access; critical for informing policymakers on budget allocation and improving healthcare infrastructure.</p>
 </section>
-<section id="dataset" class="level2">
-<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
-<p>Two datasets are used as an input : OSM network + healthcare service points. The networks should contains the attribute such as distance (in metre) and speed (m/s). Common issues usually arise when we input these two dataset are unconnected network (check the network’s topology) and unlocated facilities. Unlocated facilities are issue that arise when healthcare service points are located far from the networks, thus the algorithm will flag these facilities as unlocated. To address this issue we can : 1) check the facility’s coordinate 2) update the network dataset.</p>
+<section id="data-methodology" class="level2">
+<h2 class="anchored" data-anchor-id="data-methodology">Data &amp; Methodology</h2>
+<p><strong>A. Data</strong></p>
+<p>Two datasets are used as input: OSM network data and healthcare service points. Common issues that arise when inputting these two datasets are unconnected networks (which can be addressed by checking topology) and unlocated facilities. Unlocated facilities are an issue that arises when healthcare service points are located far from the network, causing the algorithm to flag these facilities as unlocated. To address this issue, we can: 1) check the facility’s coordinates, or 2) update the network dataset.</p>
 <p><img src="images/network_.jpg" class="img-fluid" width="354"></p>
-<p><strong>Fig 7.2 Common issues during pre-processing</strong></p>
+<p>Fig 7.2 Common issues during pre-processing</p>
+<p>Data Challenges :</p>
+<ol type="1">
+<li><p>Unlocated facilities are the most common issue when dealing with the western region. This happens because many of the points lie outside the intended territory, sometimes falling in the middle of nowhere, either in the ocean or in mountainous areas, or because the dataset overlaps in certain areas due to inaccurate latitude and longitude records. My work included addressing these unlocated facilities by comparing them with a dataset geolocated based on address keywords in Google Earth. If it still flagged an error, and trust me it happened a lot :), I had to manually check it against Google Maps.</p></li>
+<li><p>Since sea network data is not yet available, we created a proxy using Euclidean distance manually, connecting port to port between islands. This proxy must also be connected to the land network in order to run successfully.</p>
+<p><img src="images/Picture1.png" class="img-fluid" width="246"></p>
+<p>Fig 7.3 Sea-network journey through port-to-port simulation and field-visit</p></li>
+</ol>
+<p><strong>B. Methodology</strong></p>
+<p>The method used in this project follow the alogrithm of ESRI Network Analysis where we prepare the main dataset of facilities and network. The networks should contains the attribute such as distance (in metre) and speed (m/s) using speed proxy for vehicles such as motorcycle and car assumed that in case of emergency they use an ambulance or private-hire car in mainland. Meanwhile, for ship speed we pick the average speed of mobile-healthcare boat unit. Below are a picture displaying the main dataset used to run the model which are facilities, network, and its intended catchment areas based on time estimates.</p>
+<p><img src="images/clipboard-4056095140.png" class="img-fluid" width="553"></p>
+<p>Fig 7.4 Network Analyst Framework in ArcGIS source : <a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/networks/what-is-network-analyst-.htm">ESRI</a></p>
 </section>
 <section id="result" class="level2">
 <h2 class="anchored" data-anchor-id="result">Result</h2>
-<p><strong>The analysis reveals that areas immediately surrounding hospitals are generally accessible within 15 minutes, indicating a relatively efficient healthcare reach in those zones.</strong> These regions benefit from well-connected transportation networks—whether road-based or estimated maritime routes—that enable timely access to medical services. This level of accessibility is crucial during emergencies, where rapid response can significantly improve patient outcomes. The model effectively captures these service areas using isochrones, helping visualize the extent of healthcare coverage within critical time thresholds.</p>
-<p><img src="images/netwrokanalyst.jpg" class="img-fluid"></p>
-<p><strong>Fig 7.3</strong> Travel time to hospital</p>
-<p><strong>However, more remote locations—particularly those lacking direct or integrated transport networks—face significantly longer travel times to reach hospitals.</strong> This is especially evident in archipelagic regions, where small islands may not be connected by formal ship routes or reliable transport infrastructure. In such cases, residents are at a disadvantage during medical emergencies, as delays in reaching care can be life-threatening. These findings underscore the need for targeted interventions, such as improving transport connectivity, deploying mobile health units, or establishing satellite clinics. By identifying underserved areas, the model provides valuable insights for policymakers to prioritize healthcare investments and promote equitable access across diverse geographic settings.</p>
-<p><img src="images/island.jpg" class="img-fluid"></p>
-<p><strong>Fig 7.4</strong> Travel time in archiplegic region.</p>
+<p><strong>The analysis reveals that areas immediately surrounding hospitals are generally accessible within 15 minutes, indicating a relatively efficient healthcare reach in those zones.</strong> These regions benefit from well-connected transportation networks; whether road-based or estimated maritime routes; that enable timely access to medical services. This level of accessibility is crucial during emergencies, where rapid response can significantly improve patient outcomes. The model effectively captures these service areas using isochrones, helping visualize the extent of healthcare coverage within critical time thresholds. Here’s the sample of the result.</p>
+<p><img src="images/clipboard-334747282.png" class="img-fluid"></p>
+<p>Fig 7.5 Travel time to hospital</p>
+<p>Each color represents the catchment area: that is, the time it would take to make a journey to the nearest facility. The white-pink dots represent the healthcare facilities. The closer an area is to a healthcare facility, and the denser its street network, the more likely that area will appear green, representing the 15-minute catchment area</p>
+<p><img src="images/clipboard-1185408774.png" class="img-fluid" width="571"></p>
+<p>Fig 7.6 Travel time in archiplegic region.</p>
+<p><strong>However, more remote locations, particularly those located far from hospitals and lacking frequent ship mobility, may face significantly longer travel times to reach hospitals.</strong> This is especially evident in archipelagic regions, where small populated islands are widely scattered. In such cases, residents are at a disadvantage during medical emergencies, as delays in reaching care can be life-threatening. Therefore, strengthening satellite clinics (puskesmas) is important, as they can provide first aid/initial treatment before patients are moved to hospitals.</p>
+<p>These findings underscore the need for targeted interventions, such as improving transport connectivity, deploying mobile health units, or establishing satellite clinics. By identifying underserved areas, the model provides valuable insights for policymakers to prioritize healthcare investments and promote equitable access across diverse geographic settings.</p>
 <p>This disparity in accessibility highlights the importance of targeted interventions. For example, improving transport connectivity, deploying mobile health units, or strategically placing new healthcare facilities could help bridge the gap for underserved areas. The model serves as a diagnostic tool to identify these vulnerable regions and guide policy decisions aimed at enhancing equitable healthcare access.</p>
 
 
