@@ -182,14 +182,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Fig 7.3 Sea-network journey through port-to-port simulation and field-visit</p></li>
 </ol>
 <p><strong>B. Methodology</strong></p>
-<p>The method used in this project follow the alogrithm of ESRI Network Analysis where we prepare the main dataset of facilities and network. The networks should contains the attribute such as distance (in metre) and speed (m/s) using speed proxy for vehicles such as motorcycle and car assumed that in case of emergency they use an ambulance or private-hire car in mainland. Meanwhile, for ship speed we pick the average speed of mobile-healthcare boat unit. Below are a picture displaying the main dataset used to run the model which are facilities, network, and its intended catchment areas based on time estimates.</p>
+<p>The method used in this project follow the scheme of ESRI Network Analysis where we prepare the main dataset of facilities and network as the initial step running the workflow, including checking the topology of road networks. The networks should contains the attribute such as distance (in metre) and speed (m/s) using speed proxy for vehicles such as motorcycle and car assumed that in case of emergency they use an ambulance or private-hire car in mainland. Meanwhile, for ship speed we pick the average speed of mobile-healthcare boat unit. Below are a picture displaying the main dataset used to run the model which are facilities, network, and its intended catchment areas based on time estimates.</p>
 <p><img src="images/clipboard-4056095140.png" class="img-fluid" width="553"></p>
 <p>Fig 7.4 Network Analyst Framework in ArcGIS source : <a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/networks/what-is-network-analyst-.htm">ESRI</a></p>
 </section>
 <section id="result" class="level2">
 <h2 class="anchored" data-anchor-id="result">Result</h2>
 <p><strong>The analysis reveals that areas immediately surrounding hospitals are generally accessible within 15 minutes, indicating a relatively efficient healthcare reach in those zones.</strong> These regions benefit from well-connected transportation networks; whether road-based or estimated maritime routes; that enable timely access to medical services. This level of accessibility is crucial during emergencies, where rapid response can significantly improve patient outcomes. The model effectively captures these service areas using isochrones, helping visualize the extent of healthcare coverage within critical time thresholds. Here’s the sample of the result.</p>
-<p><img src="images/clipboard-334747282.png" class="img-fluid"></p>
+<p><img src="images/clipboard-2847709606.png" class="img-fluid" width="629"></p>
 <p>Fig 7.5 Travel time to hospital</p>
 <p>Each color represents the catchment area: that is, the time it would take to make a journey to the nearest facility. The white-pink dots represent the healthcare facilities. The closer an area is to a healthcare facility, and the denser its street network, the more likely that area will appear green, representing the 15-minute catchment area</p>
 <p><img src="images/clipboard-1185408774.png" class="img-fluid" width="571"></p>

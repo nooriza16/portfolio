@@ -40,7 +40,7 @@ Data Challenges :
 
 **B. Methodology**
 
-The method used in this project follow the alogrithm of ESRI Network Analysis where we prepare the main dataset of facilities and network. The networks should contains the attribute such as distance (in metre) and speed (m/s) using speed proxy for vehicles such as motorcycle and car assumed that in case of emergency they use an ambulance or private-hire car in mainland. Meanwhile, for ship speed we pick the average speed of mobile-healthcare boat unit. Below are a picture displaying the main dataset used to run the model which are facilities, network, and its intended catchment areas based on time estimates.
+The method used in this project follow the scheme of ESRI Network Analysis where we prepare the main dataset of facilities and network as the initial step running the workflow, including checking the topology of road networks. The networks should contains the attribute such as distance (in metre) and speed (m/s) using speed proxy for vehicles such as motorcycle and car assumed that in case of emergency they use an ambulance or private-hire car in mainland. Meanwhile, for ship speed we pick the average speed of mobile-healthcare boat unit. Below are a picture displaying the main dataset used to run the model which are facilities, network, and its intended catchment areas based on time estimates.
 
 ![](images/clipboard-4056095140.png){width="553"}
 
@@ -50,7 +50,7 @@ Fig 7.4 Network Analyst Framework in ArcGIS source : [ESRI](https://pro.arcgis.c
 
 **The analysis reveals that areas immediately surrounding hospitals are generally accessible within 15 minutes, indicating a relatively efficient healthcare reach in those zones.** These regions benefit from well-connected transportation networks; whether road-based or estimated maritime routes; that enable timely access to medical services. This level of accessibility is crucial during emergencies, where rapid response can significantly improve patient outcomes. The model effectively captures these service areas using isochrones, helping visualize the extent of healthcare coverage within critical time thresholds. Here's the sample of the result.
 
-![](images/clipboard-334747282.png)
+![](images/clipboard-2847709606.png){width="629"}
 
 Fig 7.5 Travel time to hospital
 
