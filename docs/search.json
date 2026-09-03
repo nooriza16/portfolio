@@ -203,6 +203,13 @@
     "text": "Feedback\n\nIt is important to check for multicollinearity—particularly when applying linear regression models. The inclusion of variance inflation factor (VIF) analysis would also strengthen the reliability of the regression results\n\nFull code : available in Github page"
   },
   {
+    "objectID": "projects/project1.html#ai-usage-disclosure",
+    "href": "projects/project1.html#ai-usage-disclosure",
+    "title": "Obesity Prevalence Prediction",
+    "section": "AI Usage Disclosure",
+    "text": "AI Usage Disclosure\n\nCode & Workflow Development: I used an LLM strictly to generate script skeletons and speed up code drafting after designing the underlying workflow and analytical direction. To maintain full comprehension of the codebase, I prompted the model iteratively for specific tasks (e.g., generating bar chart scripts, fine-tuning machine learning models, or rendering SHAP plots) rather than generating full-pipeline scripts. The code was then manually reviewed, refined, and executed locally. No raw data was uploaded to any LLM portal.\nLiterature Review Support: I leveraged the LLM to identify targeted literature (e.g., finding relevant studies published after 2023), using the outputs as an initial reference list for further independent verification and analysis.\nDrafting & Editing: I utilized the LLM for proofreading, focusing on refining grammar, clarity, and paragraph-level cohesion rather than generating full text sections.\n\n–"
+  },
+  {
     "objectID": "projects/project3.html",
     "href": "projects/project3.html",
     "title": "London’s Tube Resilience",
