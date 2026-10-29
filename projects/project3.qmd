@@ -8,7 +8,7 @@ categories: [Data Science]
 
 ## Problem Statement
 
-Have you ever used public transport, only to find it doesn't operate the way you expected? You check your maps app, and... voilà...a diversion. Either you have to wait, which isn't always guaranteed to help, or switch to another mode of transport. But what if that scenario happened at the most important node in the network, or during peak hour? In this post, I build a mitigation scenario for disruptions hitting the Tube network. The project begins by identifying which stations are most important in the network. Second, I model network cohesion by sequentially removing the 10 most important stations. Finally, I examine which stations are impacted the most by each closure scenario, and identify alternative routes that avoid overwhelming the rest of the network
+Have you ever used public transport, only to find it doesn't operate the way you expected? You check your maps app, and... voilà...a diversion. Either you have to wait, which isn't always guaranteed to help, or switch to another mode of transport. But what if that scenario happened at the most important node in the network, or during peak hour? In this post, I explore scenario for disruptions hitting the Tube network and how it impacted people using the service. The project begins by identifying which stations are most important in the network. Second, I model network cohesion by sequentially removing the 10 most important stations. Finally, I examine which stations are impacted the most by each closure scenario, and identify alternative routes that avoid overwhelming the rest of the network
 
 ## **Dataset**
 
