@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d18d92b88f625daa9bc187b74b3587cc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ef805794a63882d15c2b886a2f280d85.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -162,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="problem-statement" class="level2">
 <h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
-<p>Have you ever used public transport, only to find it doesn’t operate the way you expected? You check your maps app, and… voilà…a diversion. Either you have to wait, which isn’t always guaranteed to help, or switch to another mode of transport. But what if that scenario happened at the most important node in the network, or during peak hour? In this post, I build a mitigation scenario for disruptions hitting the Tube network. The project begins by identifying which stations are most important in the network. Second, I model network cohesion by sequentially removing the 10 most important stations. Finally, I examine which stations are impacted the most by each closure scenario, and identify alternative routes that avoid overwhelming the rest of the network</p>
+<p>Have you ever used public transport, only to find it doesn’t operate the way you expected? You check your maps app, and… voilà…a diversion. Either you have to wait, which isn’t always guaranteed to help, or switch to another mode of transport. But what if that scenario happened at the most important node in the network, or during peak hour? In this post, I explore scenario for disruptions hitting the Tube network and how it impacted people using the service. The project begins by identifying which stations are most important in the network. Second, I model network cohesion by sequentially removing the 10 most important stations. Finally, I examine which stations are impacted the most by each closure scenario, and identify alternative routes that avoid overwhelming the rest of the network</p>
 </section>
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset"><strong>Dataset</strong></h2>
