@@ -1,7 +1,7 @@
 ---
 title: "Obesity Prevalence Prediction"
 date: 2025-02-10
-image: images/project1-thumbnail.jpg
+image: images/project9-thumbnail.jpg
 description: This study employed a machine learning model to predict obesity prevalence in pre-teen children using early life stressors variables 
 categories: [Machine Learning]
 ---
