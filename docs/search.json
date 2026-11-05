@@ -4,7 +4,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Obesity Prevalence Prediction\n\n\n\nMachine Learning\n\n\n\nThis study employed a machine learning model to predict obesity prevalence in pre-teen children using early life stressors variables\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nRip-current Rescue Model\n\n\n\nModelling\n\n\n\nAn interactive dashboard for modelling a rescue in Rip-current related drowning and lost incidents using Agent Based Modelling\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nLondon’s Tube Resilience\n\n\n\nData Science\n\n\n\nScenario investigating the resilience of the London Underground during morning peak hours (07:00–10:00 AM)\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupermarket Location Selection\n\n\n\nLocation Intelligence\n\n\n\nApplied a spatial interaction model using human population data to determine the optimal location for a new supermarket\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Road Intersection Upgrade\n\n\n\nLocation intelligence\n\n\n\nEvaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina using R Studio\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nForest Loss and Biodiversity Mapping\n\n\n\nGoogle Earth Engine\n\n\n\nThis article presents my CASA UCL dissertation, which uses Google Earth Engine and open-source data to support Indonesia’s commitment to reversing biodiversity loss under…\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Service Area\n\n\n\nLocation Intelligence\n\n\n\nA Network Analysis model to visualize travel time to healthcare facilities in Archipelagic Regions\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Geodatabase with ArcGIS Pro & ArcGIS Enterprise\n\n\n\nGIS\n\n\n\nProducing geospatial datasets—like road networks and land use using ArcGIS Pro and Enterprise for collaborative work\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nComposing & Handling Field Survey Activities Using ArcMap\n\n\n\nGIS\n\n\n\nA summary on my experience managing a project that involved survey activities, including data preparation, integration, and field team coordination\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "30MapChallengeCOllection\n\n\n\nGIS\n\n\n\nThis article documents my entry for\n\n\n\nNov 1, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nRip-current Rescue Model\n\n\n\nModelling\n\n\n\nAn interactive dashboard for modelling a rescue in Rip-current related drowning and lost incidents using Agent Based Modelling\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nLondon’s Tube Resilience\n\n\n\nData Science\n\n\n\nScenario investigating the resilience of the London Underground during morning peak hours (07:00–10:00 AM)\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupermarket Location Selection\n\n\n\nLocation Intelligence\n\n\n\nApplied a spatial interaction model using human population data to determine the optimal location for a new supermarket\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Road Intersection Upgrade\n\n\n\nLocation intelligence\n\n\n\nEvaluating a proposed intersection upgrade locations in The City of CHarlotte, North Carolina using R Studio\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nForest Loss and Biodiversity Mapping\n\n\n\nGoogle Earth Engine\n\n\n\nThis article presents my CASA UCL dissertation, which uses Google Earth Engine and open-source data to support Indonesia’s commitment to reversing biodiversity loss under…\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Service Area\n\n\n\nLocation Intelligence\n\n\n\nA Network Analysis model to visualize travel time to healthcare facilities in Archipelagic Regions\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Geodatabase with ArcGIS Pro & ArcGIS Enterprise\n\n\n\nGIS\n\n\n\nProducing geospatial datasets—like road networks and land use using ArcGIS Pro and Enterprise for collaborative work\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nObesity Prevalence Prediction\n\n\n\nMachine Learning\n\n\n\nThis study employed a machine learning model to predict obesity prevalence in pre-teen children using early life stressors variables\n\n\n\nFeb 10, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/project8.html",
@@ -142,72 +142,23 @@
   {
     "objectID": "projects/project1.html",
     "href": "projects/project1.html",
-    "title": "Obesity Prevalence Prediction",
+    "title": "30MapChallengeCOllection",
     "section": "",
-    "text": "Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Despite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo et al., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds et al., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by a complex factors (Lingvay et al. (2024), looking at different angles might offer valuable insights.\nThis work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors."
+    "text": "November 2026 is my first attempt to join #30DayMapChallenge sponsored by Mapbox. All projects are published on my linkedin page. I aim to deepern my skillset on Geospatial Data Science methods, while also focusing on open source dataset and methodology."
   },
   {
-    "objectID": "projects/project1.html#problem-statement",
-    "href": "projects/project1.html#problem-statement",
-    "title": "Obesity Prevalence Prediction",
+    "objectID": "projects/project1.html#context",
+    "href": "projects/project1.html#context",
+    "title": "30MapChallengeCOllection",
     "section": "",
-    "text": "Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Despite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo et al., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds et al., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by a complex factors (Lingvay et al. (2024), looking at different angles might offer valuable insights.\nThis work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors."
+    "text": "November 2026 is my first attempt to join #30DayMapChallenge sponsored by Mapbox. All projects are published on my linkedin page. I aim to deepern my skillset on Geospatial Data Science methods, while also focusing on open source dataset and methodology."
   },
   {
-    "objectID": "projects/project1.html#question-to-address",
-    "href": "projects/project1.html#question-to-address",
-    "title": "Obesity Prevalence Prediction",
-    "section": "Question to address",
-    "text": "Question to address\nRQ1: How accurately can early life adversities predict obesity prevalence in pre-teen children in London using various predictive machine learning models?\nRQ2: How do early life adversities contribute to pree-teen’s obesity prevalence in London?"
-  },
-  {
-    "objectID": "projects/project1.html#dataset",
-    "href": "projects/project1.html#dataset",
-    "title": "Obesity Prevalence Prediction",
-    "section": "Dataset",
-    "text": "Dataset"
-  },
-  {
-    "objectID": "projects/project1.html#method",
-    "href": "projects/project1.html#method",
-    "title": "Obesity Prevalence Prediction",
-    "section": "Method",
-    "text": "Method\nAddressing RQ1, linear regression is applied as it provides a simple, fast baseline forpredicting pre-teen obesity. For better accuracy, advanced models like Random Forest (RF) and XGBoost (XGB) are also applied, following Long et al . (2025)’s methodology on UK’s nutritional-based obesity research, as RF and XGB excel with high-dimensional, non-linearity, and predictive performance. Meanwhile, to address RQ2, this study employs Shapley Additive exPlanations (SHAP) to identify featurescontributing to obesity prevalence. The diagram below presents the overall approach followed in this project, showingeach key task in the order they were performed.\n\nFig 1.1 Workflow Diagram"
-  },
-  {
-    "objectID": "projects/project1.html#result",
-    "href": "projects/project1.html#result",
-    "title": "Obesity Prevalence Prediction",
-    "section": "Result",
-    "text": "Result\n1) Preliminary Result\n\nThe results highlight differences in model performance and generalization: Linear Regression generalizes well, but its predictive power is limited by the linearity assumption, which some features violate, as shown in the correlation matrix While Random Forest and XGBoost fit the training data well, they overfit on the test data. Despite this, they outperform Linear Regression in RMSE, with Random Forest performing better than XGBoost.’\n2) Hyperparameter tuning and Cross Validation result\nAs Linear Regression does not have hyperparameters to tune, hyperparameters tuning will be applied to RF and XGB. GridSearchCV with 5-fold cross-validation is used to optimize performance, aiming to reduce test RMSE and improve R² while maintaining simplicity and efficiency.\n\nRandom Forest\nIn RF, the model’s previous overfitting result suggest that the tree might be too deep, thus max_depth is tested from shallow (3) to moderately deep (12), aiming to capture key patterns without fitting irrelevant details. The min_samples_split and min_samples_leaf is also tuned (up to 15) to prevent overly specific splits. Additionally, n_estimator is optimized, as more trees can improve performance.\n\nThe model reduces overfitting, boosts R² on test data, and sets max_depth to 5 for better generalization. We will examine this hyperparameter individually using validation curve to identify the point at which increasing it leads to overfitting.\n\nFig 1.2 Validation curve for Random Forest\nWe can see that after max_depth = 5 on validation curve (red), model’s performance on unseen data plateaus, indicating that beyond this point the model likely starting to overfit.\nXGBoost\nIn XGBoost, to optimize model performance, we will vary max_depth to find an optimal depth. The learning_rate will be evaluate to achieve stable adjusted parameter after being iterated. We will also vary n_estimators , as the bigger the number the more stable the model performance. Additionally, reg_lambda will be tested to reduce overfitting by penalize large weights.\n\nAfter tuning, R² increases, overfitting reduced significantly, and the model identifies a max_depth of 4 for good generalization. We will investigate this using a validation curve.\n\nFig 1.3 Validation curve for XGBoost\nDespite its slightly fluctuative R² score, the pleateu starts to emerge from the max_depth = 4, suggesting that changing the hyperparameter within that range doesn’t significantly improve generalization performance and may increase the risk of overfitting.\n\n3) Comparison of Each Model\n\n\nFig 1.3 Comparison of 3 models\nThe accuracy of machine learning models in predicting pre-teen obesity prevalence in London using early life adversities varies. Random Forest and XGBoost models show higher R² and lower RMSE compared to the baseline linear regression model. Among advanced models, RF has a better performance than XGBoost, with higher R² (0.622 vs. 0.603), with relatively small prediction errors compared to other models listed (0.0334 vs. 0.0342 and 0.0354), and less overfitting before and after hyperparameter tuning.\nAdditionally, Random Forest is faster than XGBoost, even with larger folds. However, even with advanced models like Random Forest, early life adversities can only explain 62.2% of the variance in pre-teen obesity prevalence in London. This leaves 37.8% unexplained. This happened as early life adversity associated with central adiposity in 2 ways, a physiological route (metabolic functioning) and psychosocial route (behaviour) (Davis et al., 2014). Meanwhile, the dataset used in this study does not include physiological aspects, only linking potential proxies for psychosocial, which may account for the unexplained variance.\nTo address RQ2, we will compare feature contributions in the top models, Random Forest and XGBoost, using a SHAP beeswarm plot.\n\nFig 1. 4 Importance Value in Random Forest\n\nFig 1. 5 Importance Value in XGBoost\nThe Random Forest and XGBoost models consistently highlight child poverty, lack of educational qualifications, and mental health index as key contributing factors to pre-teen obesity prevalence, underscoring their universal importance. This aligns with Kimbro and Denney ( 2013) which linked obesity with higher poverty level and low education.\nThe third-ranked mental health index further emphasizes the need for integrating mental health to obesity interventions. The models diverge in their fourth and fifth rankings: RF places families with 3+children fourth and those working 49+ hours per week fifth, while XGB ranks working 49+ hours fourth and lone parent unemployment fifth. RF highlights resource strain in larger households and time strain potentially limiting healthy meal preparation or child supervision, while XGB points to struggles in single-parent households and overtime working (49+ hours exceeds the UK Working Time Directive).\nThese findings suggests that obesity interventions may benefit from incorporating at-risk populations with childhood adversities, as well as evaluating support schemes for work-life balance, unemployed single parents, and large households"
-  },
-  {
-    "objectID": "projects/project1.html#conclusion",
-    "href": "projects/project1.html#conclusion",
-    "title": "Obesity Prevalence Prediction",
-    "section": "Conclusion",
-    "text": "Conclusion\n\nThe Random Forest model outperforms XGBoost and Linear Regression in predicting pre-teen obesity prevalence with higher R² and lower RMSE.\nBoth the Random Forest and XGBoost models consistently identify child poverty, limited educational qualifications, and mental health issues as major contributing factors to pre-teen obesity prevalence in London"
-  },
-  {
-    "objectID": "projects/project1.html#references",
-    "href": "projects/project1.html#references",
-    "title": "Obesity Prevalence Prediction",
-    "section": "References",
-    "text": "References\nAhmad, Q. I., Ahmad, C. B. and Ahmad, S. M. (2010) ‘Childhood obesity’, Indian Journal of Endocrinology and Metabolism, 14(1), pp. 19–25. D’Argenio, A. et al. (2009) ‘Early trauma and adult obesity: Is psychological dysfunction the mediating mechanism?’, Physiology & Behavior, 98(5), pp. 543–546. doi: 10.1016/j.physbeh.2009.08.010.\nDe Lorenzo, A. et al. (2020) ‘Obesity: A preventable, treatable, but relapsing disease’, Nutrition, 71, p. 110615. doi: 10.1016/j.nut.2019.110615\nLingvay, I. et al. (2024) ‘Obesity in adults’, The Lancet, 404(10456), pp. 972–987. doi: 10.1016/S0140-6736(24)01210-8.\nOffice for Health Improvement and Disparities (2022) ‘Childhood obesity: applying All Our Health’, Childhood obesity: applying All Our Health, 7 April. Available at: https://www.gov.uk/government/publications/childhood-obesity-applying-all-our-health/childhood-obesity-applying-all-our-health (Accessed: 10 January 2025).\nSimmonds, M. et al. (2016) ‘Predicting adult obesity from childhood obesity: a systematic review and meta‐analysis’, Obesity Reviews, 17(2), pp. 95–107. doi: 10.1111/obr.12334.\nSafaei, M. et al. (2021) ‘A systematic literature review on obesity: Understanding the causes & consequences of obesity and reviewing various machine learning approaches used to predict obesity’, Computers in Biology and Medicine, 136, p. 104754. doi: 10.1016/j.compbiomed.2021.104754."
-  },
-  {
-    "objectID": "projects/project1.html#feedback",
-    "href": "projects/project1.html#feedback",
-    "title": "Obesity Prevalence Prediction",
-    "section": "Feedback",
-    "text": "Feedback\n\nIt is important to check for multicollinearity—particularly when applying linear regression models. The inclusion of variance inflation factor (VIF) analysis would also strengthen the reliability of the regression results\n\nFull code : available in Github page"
-  },
-  {
-    "objectID": "projects/project1.html#ai-usage-disclosure",
-    "href": "projects/project1.html#ai-usage-disclosure",
-    "title": "Obesity Prevalence Prediction",
-    "section": "AI Usage Disclosure",
-    "text": "AI Usage Disclosure\n\nCode & Workflow Development: I used an LLM strictly to generate script skeletons and speed up code drafting after designing the underlying workflow and analytical direction. To maintain full comprehension of the codebase, I prompted the model iteratively for specific tasks (e.g., generating bar chart scripts, fine-tuning machine learning models, or rendering SHAP plots) rather than generating full-pipeline scripts. The code was then manually reviewed, refined, and executed locally. No raw data was uploaded to any LLM portal.\nLiterature Review Support: I leveraged the LLM to identify targeted literature (e.g., finding relevant studies published after 2023), using the outputs as an initial reference list for further independent verification and analysis.\nDrafting & Editing: I utilized the LLM for proofreading, focusing on refining grammar, clarity, and paragraph-level cohesion rather than generating full text sections.\n\n–"
+    "objectID": "projects/project1.html#map-gallery",
+    "href": "projects/project1.html#map-gallery",
+    "title": "30MapChallengeCOllection",
+    "section": "Map Gallery",
+    "text": "Map Gallery\nDay 1 - points\n\nDay 2 - Lines\n\nDay 3 - Polygon\n\nDay 4 - Clusters"
   },
   {
     "objectID": "projects/project3.html",
@@ -303,8 +254,71 @@
   {
     "objectID": "projects/project9.html",
     "href": "projects/project9.html",
-    "title": "Composing & Handling Field Survey Activities Using ArcMap",
+    "title": "Obesity Prevalence Prediction",
     "section": "",
-    "text": "Within this job, my duty is to provide a technical consultancy to assist door-to-door data collection by designing a land-parcel map for densely populated area using ArcMAP, with the goals to :"
+    "text": "Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Despite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo et al., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds et al., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by a complex factors (Lingvay et al. (2024), looking at different angles might offer valuable insights.\nThis work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors."
+  },
+  {
+    "objectID": "projects/project9.html#problem-statement",
+    "href": "projects/project9.html#problem-statement",
+    "title": "Obesity Prevalence Prediction",
+    "section": "",
+    "text": "Obesity is major public health concerns and ranked as the fifth leading cause of death worldwide (Safaei et al., 2021). Despite its prevalence, obesity remains preventable through lifestyle changes, nutritional, and policy interventions (De Lorenzo et al., 2020). Addressing obesity is urgent due to its generational cycle: obese children often become obese adults (Simmonds et al., 2016), and obese adults are more likely to have children with higher birth weights, increasing obesity risk (Office for Health Improvement and Disparities, 2022). Since obesity is caused by a complex factors (Lingvay et al. (2024), looking at different angles might offer valuable insights.\nThis work aims to explore how early life adversities estimate obesity pravelence, which ground up by findings that repetitive stress could associate with changes in appetite and metabolism (Davis et al., 2014). Pre-teen children (ages 10-11 years) is chosen as they have a higher risk of becoming obese adults compared to preschool children (Ahmad, Ahmad, and Ahmad, 2010). By examining this specific age group, we hope to gain insights into how early life adversity can predict obesity prevalence and identify its key contributing factors."
+  },
+  {
+    "objectID": "projects/project9.html#question-to-address",
+    "href": "projects/project9.html#question-to-address",
+    "title": "Obesity Prevalence Prediction",
+    "section": "Question to address",
+    "text": "Question to address\nRQ1: How accurately can early life adversities predict obesity prevalence in pre-teen children in London using various predictive machine learning models?\nRQ2: How do early life adversities contribute to pree-teen’s obesity prevalence in London?"
+  },
+  {
+    "objectID": "projects/project9.html#dataset",
+    "href": "projects/project9.html#dataset",
+    "title": "Obesity Prevalence Prediction",
+    "section": "Dataset",
+    "text": "Dataset"
+  },
+  {
+    "objectID": "projects/project9.html#method",
+    "href": "projects/project9.html#method",
+    "title": "Obesity Prevalence Prediction",
+    "section": "Method",
+    "text": "Method\nAddressing RQ1, linear regression is applied as it provides a simple, fast baseline forpredicting pre-teen obesity. For better accuracy, advanced models like Random Forest (RF) and XGBoost (XGB) are also applied, following Long et al . (2025)’s methodology on UK’s nutritional-based obesity research, as RF and XGB excel with high-dimensional, non-linearity, and predictive performance. Meanwhile, to address RQ2, this study employs Shapley Additive exPlanations (SHAP) to identify featurescontributing to obesity prevalence. The diagram below presents the overall approach followed in this project, showingeach key task in the order they were performed.\n\nFig 1.1 Workflow Diagram"
+  },
+  {
+    "objectID": "projects/project9.html#result",
+    "href": "projects/project9.html#result",
+    "title": "Obesity Prevalence Prediction",
+    "section": "Result",
+    "text": "Result\n1) Preliminary Result\n\nThe results highlight differences in model performance and generalization: Linear Regression generalizes well, but its predictive power is limited by the linearity assumption, which some features violate, as shown in the correlation matrix While Random Forest and XGBoost fit the training data well, they overfit on the test data. Despite this, they outperform Linear Regression in RMSE, with Random Forest performing better than XGBoost.’\n2) Hyperparameter tuning and Cross Validation result\nAs Linear Regression does not have hyperparameters to tune, hyperparameters tuning will be applied to RF and XGB. GridSearchCV with 5-fold cross-validation is used to optimize performance, aiming to reduce test RMSE and improve R² while maintaining simplicity and efficiency.\n\nRandom Forest\nIn RF, the model’s previous overfitting result suggest that the tree might be too deep, thus max_depth is tested from shallow (3) to moderately deep (12), aiming to capture key patterns without fitting irrelevant details. The min_samples_split and min_samples_leaf is also tuned (up to 15) to prevent overly specific splits. Additionally, n_estimator is optimized, as more trees can improve performance.\n\nThe model reduces overfitting, boosts R² on test data, and sets max_depth to 5 for better generalization. We will examine this hyperparameter individually using validation curve to identify the point at which increasing it leads to overfitting.\n\nFig 1.2 Validation curve for Random Forest\nWe can see that after max_depth = 5 on validation curve (red), model’s performance on unseen data plateaus, indicating that beyond this point the model likely starting to overfit.\nXGBoost\nIn XGBoost, to optimize model performance, we will vary max_depth to find an optimal depth. The learning_rate will be evaluate to achieve stable adjusted parameter after being iterated. We will also vary n_estimators , as the bigger the number the more stable the model performance. Additionally, reg_lambda will be tested to reduce overfitting by penalize large weights.\n\nAfter tuning, R² increases, overfitting reduced significantly, and the model identifies a max_depth of 4 for good generalization. We will investigate this using a validation curve.\n\nFig 1.3 Validation curve for XGBoost\nDespite its slightly fluctuative R² score, the pleateu starts to emerge from the max_depth = 4, suggesting that changing the hyperparameter within that range doesn’t significantly improve generalization performance and may increase the risk of overfitting.\n\n3) Comparison of Each Model\n\n\nFig 1.3 Comparison of 3 models\nThe accuracy of machine learning models in predicting pre-teen obesity prevalence in London using early life adversities varies. Random Forest and XGBoost models show higher R² and lower RMSE compared to the baseline linear regression model. Among advanced models, RF has a better performance than XGBoost, with higher R² (0.622 vs. 0.603), with relatively small prediction errors compared to other models listed (0.0334 vs. 0.0342 and 0.0354), and less overfitting before and after hyperparameter tuning.\nAdditionally, Random Forest is faster than XGBoost, even with larger folds. However, even with advanced models like Random Forest, early life adversities can only explain 62.2% of the variance in pre-teen obesity prevalence in London. This leaves 37.8% unexplained. This happened as early life adversity associated with central adiposity in 2 ways, a physiological route (metabolic functioning) and psychosocial route (behaviour) (Davis et al., 2014). Meanwhile, the dataset used in this study does not include physiological aspects, only linking potential proxies for psychosocial, which may account for the unexplained variance.\nTo address RQ2, we will compare feature contributions in the top models, Random Forest and XGBoost, using a SHAP beeswarm plot.\n\nFig 1. 4 Importance Value in Random Forest\n\nFig 1. 5 Importance Value in XGBoost\nThe Random Forest and XGBoost models consistently highlight child poverty, lack of educational qualifications, and mental health index as key contributing factors to pre-teen obesity prevalence, underscoring their universal importance. This aligns with Kimbro and Denney ( 2013) which linked obesity with higher poverty level and low education.\nThe third-ranked mental health index further emphasizes the need for integrating mental health to obesity interventions. The models diverge in their fourth and fifth rankings: RF places families with 3+children fourth and those working 49+ hours per week fifth, while XGB ranks working 49+ hours fourth and lone parent unemployment fifth. RF highlights resource strain in larger households and time strain potentially limiting healthy meal preparation or child supervision, while XGB points to struggles in single-parent households and overtime working (49+ hours exceeds the UK Working Time Directive).\nThese findings suggests that obesity interventions may benefit from incorporating at-risk populations with childhood adversities, as well as evaluating support schemes for work-life balance, unemployed single parents, and large households"
+  },
+  {
+    "objectID": "projects/project9.html#conclusion",
+    "href": "projects/project9.html#conclusion",
+    "title": "Obesity Prevalence Prediction",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nThe Random Forest model outperforms XGBoost and Linear Regression in predicting pre-teen obesity prevalence with higher R² and lower RMSE.\nBoth the Random Forest and XGBoost models consistently identify child poverty, limited educational qualifications, and mental health issues as major contributing factors to pre-teen obesity prevalence in London"
+  },
+  {
+    "objectID": "projects/project9.html#references",
+    "href": "projects/project9.html#references",
+    "title": "Obesity Prevalence Prediction",
+    "section": "References",
+    "text": "References\nAhmad, Q. I., Ahmad, C. B. and Ahmad, S. M. (2010) ‘Childhood obesity’, Indian Journal of Endocrinology and Metabolism, 14(1), pp. 19–25. D’Argenio, A. et al. (2009) ‘Early trauma and adult obesity: Is psychological dysfunction the mediating mechanism?’, Physiology & Behavior, 98(5), pp. 543–546. doi: 10.1016/j.physbeh.2009.08.010.\nDe Lorenzo, A. et al. (2020) ‘Obesity: A preventable, treatable, but relapsing disease’, Nutrition, 71, p. 110615. doi: 10.1016/j.nut.2019.110615\nLingvay, I. et al. (2024) ‘Obesity in adults’, The Lancet, 404(10456), pp. 972–987. doi: 10.1016/S0140-6736(24)01210-8.\nOffice for Health Improvement and Disparities (2022) ‘Childhood obesity: applying All Our Health’, Childhood obesity: applying All Our Health, 7 April. Available at: https://www.gov.uk/government/publications/childhood-obesity-applying-all-our-health/childhood-obesity-applying-all-our-health (Accessed: 10 January 2025).\nSimmonds, M. et al. (2016) ‘Predicting adult obesity from childhood obesity: a systematic review and meta‐analysis’, Obesity Reviews, 17(2), pp. 95–107. doi: 10.1111/obr.12334.\nSafaei, M. et al. (2021) ‘A systematic literature review on obesity: Understanding the causes & consequences of obesity and reviewing various machine learning approaches used to predict obesity’, Computers in Biology and Medicine, 136, p. 104754. doi: 10.1016/j.compbiomed.2021.104754."
+  },
+  {
+    "objectID": "projects/project9.html#feedback",
+    "href": "projects/project9.html#feedback",
+    "title": "Obesity Prevalence Prediction",
+    "section": "Feedback",
+    "text": "Feedback\n\nIt is important to check for multicollinearity—particularly when applying linear regression models. The inclusion of variance inflation factor (VIF) analysis would also strengthen the reliability of the regression results\n\nFull code : available in Github page"
+  },
+  {
+    "objectID": "projects/project9.html#ai-usage-disclosure",
+    "href": "projects/project9.html#ai-usage-disclosure",
+    "title": "Obesity Prevalence Prediction",
+    "section": "AI Usage Disclosure",
+    "text": "AI Usage Disclosure\n\nCode & Workflow Development: I used an LLM strictly to generate script skeletons and speed up code drafting after designing the underlying workflow and analytical direction. To maintain full comprehension of the codebase, I prompted the model iteratively for specific tasks (e.g., generating bar chart scripts, fine-tuning machine learning models, or rendering SHAP plots) rather than generating full-pipeline scripts. The code was then manually reviewed, refined, and executed locally. No raw data was uploaded to any LLM portal.\nLiterature Review Support: I leveraged the LLM to identify targeted literature (e.g., finding relevant studies published after 2023), using the outputs as an initial reference list for further independent verification and analysis.\nDrafting & Editing: I utilized the LLM for proofreading, focusing on refining grammar, clarity, and paragraph-level cohesion rather than generating full text sections.\n\n–"
   }
 ]

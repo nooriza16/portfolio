@@ -38,13 +38,13 @@ Global variables track drowned, lost, and rescued bathers while initial bathers 
 
 The intuition of the process repeated upon every tick are the bathers will be dragged away from the shoreline with movement depends on the currents’ strength. The movement will cost bathers energy, thus energy will be updated every ticks with detail as follows:
 
--   neck area, each patches cost 4 to 7 energy
+- neck area, each patches cost 4 to 7 energy
 
--   head, each patches costs 4 to 5 energy
+- head, each patches costs 4 to 5 energy
 
--   In non-rip currents area near the shoreline, each patch will cost 2 energy
+- In non-rip currents area near the shoreline, each patch will cost 2 energy
 
--   In non-rip currents area away from the shoreline cost 3 energy
+- In non-rip currents area away from the shoreline cost 3 energy
 
 After that, when the response time set, the ship will navigate its direction depending on target availability in radius of 5 patch either move randomly or to rescue. Upon sensing the target, the ship will move forward faster of 5 patch else it moves 2 patches. After that, when the ship is near enough (radius 3) with the bathers it will rescue, by turning the bathers into pink, and trigger rescued counter. At the same time, in other location bathers which energy depleted will trigger drown counter and bathers hit the right edge will trigger lost counter.
 
