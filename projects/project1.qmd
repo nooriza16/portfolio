@@ -2,7 +2,7 @@
 title: "30MapChallengeCOllection"
 date: 2026-11-01
 image: images/project1-thumbnail.jpg
-description: This article documents my entry for 2026 30DayMapChellenge sponspored by mapbox
+description: This article documents my entry for 2026 30DayMapChellenge sponspored by mapbox where we have to make a new map everyday with different topics.
 categories: [GIS]
 ---
 
